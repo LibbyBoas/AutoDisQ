@@ -1,11 +1,7 @@
 Require Import Coq.btauto.Btauto Coq.NArith.Nnat Bool. 
-Require Import Dirac.
+Require Import QuantumLib.Bits.
 Require Import BasicUtility.
 Local Open Scope nat_scope.
-
-Definition rz_ang (n:nat) : R := ((2%R * PI)%R / 2%R^n).
-
-Definition rrz_ang (n:nat) : R := ((2%R * PI)%R - ((2%R * PI)%R / 2%R^n)).
 
 (* Here we defined the specification of carry value for each bit. *)
 (* fb_push is to take a qubit and then push it to the zero position 
@@ -31,12 +27,11 @@ Proof.
     lia.
 Qed.
 
-
 Lemma mod_sum_lt_bool :
   forall x y M,
     x < M ->
     y < M ->
-    ¬ (M <=? x + y) = (x <=? (x + y) mod M).
+     (¬ (Nat.leb M (x + y))) = (Nat.leb x ((x + y) mod M)).
 Proof.
   intros. bdestruct (M <=? x + y); bdestruct (x <=? (x + y) mod M); try easy.
   assert ((x + y) mod M < x) by (apply mod_sum_lt; lia). lia.
