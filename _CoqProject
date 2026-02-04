@@ -11,3 +11,4 @@ DisQDef.v
 DisQKind.v
 DisQSem.v
 DisQType.v
+AUTO.v
