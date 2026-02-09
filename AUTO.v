@@ -1,235 +1,323 @@
-Require Import Reals.
-Require Import Psatz.
-Require Import QuantumLib.Complex.
+
+
+From Coq Require Import List Arith Bool.
+Import ListNotations.
+Require Import List.
+Local Open Scope list_scope.
+
+
+Require Import Reals Psatz.
 Require Import SQIR.SQIR.
 Require Import QuantumLib.VectorStates.
 Require Import SQIR.UnitaryOps.
-Require Import Coq.btauto.Btauto Coq.NArith.Nnat. 
-Require Import BasicUtility.
+
+Require Import Coq.btauto.Btauto Coq.NArith.Nnat.
 Require Import Classical_Prop.
+
+Require Import BasicUtility.
 Require Import MathSpec.
 Require Import DisQSyntax.
-(*Require Import OQASM.*)
-(**********************)
-(** Unitary Programs **)
-(**********************)
-
-Require Import Coq.FSets.FMapList.
-Require Import Coq.FSets.FMapFacts.
-Require Import Coq.Structures.OrderedTypeEx.
-Declare Scope cexp_scope.
-Delimit Scope cexp_scope with cexp.
-Local Open Scope cexp_scope.
-Local Open Scope nat_scope.
-From Coq Require Import List Arith Bool.
-Import ListNotations.
-
-
-
-Parameter var   : Type.
-
-
-(* Membrane identifier  *)
-Definition membrane := var.
-Definition membranes := list membrane.
-
-(* Equality on membranes (vars) *)
-Parameter var_eqb : var -> var -> bool.
-
-(* "qubits used by an operation" *)
-Parameter vars_of_exp : exp -> list var.
-
-Parameter place_operation : config -> membrane -> exp -> config.
-
-(* Insert teleport/channels for sending/receiving qubits  *)
-Parameter insert_teleport_sends :
-  config -> list var -> nat -> membrane -> config * nat.
-
-Parameter insert_teleport_receives :
-  config -> list var -> nat -> membrane ->
-  (* current location map *)
-  (var -> membrane) ->
-  (* returns updated cfg, fresh, and updated location *)
-  config * nat * (var -> membrane).
-
-(* A reasonable empty configuration for starting accumulation *)
-Parameter empty_config : config.
 
 (* ========================================================================= *)
-(*                  AutoDisQ helper types and aliases                        *)
+(* Mapping                                                                   *)
+(* ========================================================================= *)
+Definition var := nat.
+
+Definition membrane := var.
+Definition membranes : Type := config.
+
+Definition var_eqb (x y : var) : bool := Nat.eqb x y.
+
+(* ========================================================================= *)
+(* vars_of_exp                                        *)
+(* ========================================================================= *)
+
+Fixpoint vars_of_exp (e : exp) : list var :=
+  match e with
+  | SKIP _ _ => []
+  | X x _ => x :: nil
+  | H x _ => x :: nil
+  | RZ _ x _ => x :: nil
+  | RRZ _ x _ => x :: nil
+  | SR _ x => x :: nil
+  | SRR _ x => x :: nil
+  | QFT x _ => x :: nil
+  | RQFT x _ => x :: nil
+  | Addto x q => x :: q :: nil
+  | CU x _ e1 => x :: vars_of_exp e1
+  | Seq e1 e2 => vars_of_exp e1 ++ vars_of_exp e2
+  end.
+
+Definition vars_of_exp_nodup (e : exp) : list var :=
+  nodup Nat.eq_dec (vars_of_exp e).
+
+
+
+(* ========================================================================= *)
+(* Core aliases                                                               *)
 (* ========================================================================= *)
 
 Definition hb_relation : Type := exp -> exp -> Prop.
-Definition op_list : Type := list exp.
+Definition op_list := list exp.
 
-(* Assignment : operation → membrane *)
 Definition op_mem_assign := exp -> membrane.
-
-(* Assignment : qubit variable → initial membrane *)
 Definition qubit_mem_assign := var -> membrane.
-
-(* Current location of each qubit variable during program generation *)
 Definition current_qubit_loc := var -> membrane.
 
-(* Rank-based sequencing (seq relation) *)
 Definition rank := nat.
 Definition seq_relation := exp -> rank.
 
-(* Fitness value — smaller is better *)
 Definition fitness_value := nat.
-
-(* Abstract distributed program — a configuration *)
 Definition distributed_prog := config.
 
 (* ========================================================================= *)
-(*                 Algorithm 1: Search-loop building blocks                  *)
+(* Config utilities                                                           *)
 (* ========================================================================= *)
 
-Parameter gen_hp : op_list -> hb_relation.
-Parameter gen_os : op_list -> op_list.
+Definition memb_id (m : memb) : var :=
+  match m with
+  | Memb l _ => l
+  | LockMemb l _ _ => l
+  end.
 
-Parameter gen_seq :
-  list (seq_relation * (op_mem_assign * qubit_mem_assign)) ->
-  hb_relation ->
-  seq_relation.
+Definition memb_procs (m : memb) : list process :=
+  match m with
+  | Memb _ lp => lp
+  | LockMemb _ _ lp => lp
+  end.
 
-Parameter gen_mem :
-  list (seq_relation * (op_mem_assign * qubit_mem_assign)) ->
-  membranes ->
-  seq_relation ->
-  (op_mem_assign * qubit_mem_assign).
+Definition rebuild_memb (m : memb) (lp' : list process) : memb :=
+  match m with
+  | Memb l _ => Memb l lp'
+  | LockMemb l r _ => LockMemb l r lp'
+  end.
 
-Parameter fit : distributed_prog -> fitness_value.
+Fixpoint memb_exists (cfg : config) (mid : var) : bool :=
+  match cfg with
+  | [] => false
+  | m :: tl =>
+      if var_eqb (memb_id m) mid then true else memb_exists tl mid
+  end.
 
-Parameter order_by_seq : seq_relation -> op_list -> op_list.
+Definition ensure_memb (cfg : config) (mid : var) : config :=
+  if memb_exists cfg mid then cfg else Memb mid [] :: cfg.
+
+Fixpoint update_memb_procs
+  (cfg : config) (mid : var) (f : list process -> list process) : config :=
+  match cfg with
+  | [] => []
+  | m :: tl =>
+      if var_eqb (memb_id m) mid
+      then rebuild_memb m (f (memb_procs m)) :: tl
+      else m :: update_memb_procs tl mid f
+  end.
+
+Fixpoint flatten_config (cfg : config) : list process :=
+  match cfg with
+  | [] => []
+  | m :: tl => memb_procs m ++ flatten_config tl
+  end.
 
 (* ========================================================================= *)
-(*        Algorithm 2: gen_prog — build DisQ config from relations           *)
+(* Operation → process                                                        *)
+(* ========================================================================= *)
+
+Definition op_to_process (op : exp) : process :=
+  AP (CAppU (nil : locus) op) PNil.
+
+Fixpoint place_operation (cfg : config) (m : membrane) (op : exp) : config :=
+  match cfg with
+  | [] => [Memb m [op_to_process op]]
+  | (Memb l ps) :: tl =>
+      if Nat.eqb l m
+      then (Memb l (ps ++ [op_to_process op])) :: tl
+      else (Memb l ps) :: place_operation tl m op
+  | (LockMemb l r ps) :: tl =>
+      (* keep locked membranes unchanged for now *)
+      (LockMemb l r ps) :: place_operation tl m op
+  end.
+
+(* ========================================================================= *)
+(* Teleport insertion — NO-OP versions                                        *)
+(* ========================================================================= *)
+
+Definition insert_teleport_sends
+  (cfg : config) (_qs : list var) (fresh : nat) (_target : membrane)
+  : config * nat :=
+  (cfg, fresh).
+
+Definition insert_teleport_receives
+  (cfg : config) (_qs : list var) (fresh : nat) (_target : membrane)
+  (loc : var -> membrane)
+  : config * nat * (var -> membrane) :=
+  (cfg, fresh, loc).
+
+
+Definition empty_config : config := nil.
+
+(* ========================================================================= *)
+(* Algorithm 1 helpers — trivial but total                                    *)
+(* ========================================================================= *)
+
+Definition candidate : Type :=
+  (seq_relation * (op_mem_assign * qubit_mem_assign))%type.
+
+Definition INF_SCORE : fitness_value := Nat.pow 10 6.
+
+
+(* Generate happens-before relation: placeholder “no constraints” *)
+Definition gen_hp (_ops : op_list) : hb_relation := fun _ _ => False.
+
+(* Generate schedule: placeholder constant rank 0 *)
+Definition gen_seq (_seen : list candidate) (_hp : hb_relation) : seq_relation :=
+  fun _ => 0%nat.
+
+(* Generate assignments: map everything to membrane 0 *)
+Definition gen_mem
+  (_seen : list candidate)
+  (_cfg : membranes)
+  (_seq : seq_relation)
+  : op_mem_assign * qubit_mem_assign :=
+  ( (fun _ : exp => 0%nat),
+    (fun _ : var => 0%nat) ).
+
+Definition fit (_ : distributed_prog) : fitness_value := 0%nat.
+
+
+Definition order_by_seq (_ : seq_relation) (ops : op_list) : op_list := ops.
+
+(* ========================================================================= *)
+(* Algorithm 2 — program generation                                           *)
 (* ========================================================================= *)
 
 Definition update_loc_for (loc : current_qubit_loc) (qs : list var) (target : membrane)
   : current_qubit_loc :=
   fun q => if existsb (fun x => var_eqb x q) qs then target else loc q.
 
-Definition qubits_to_move (loc : current_qubit_loc) (target_mem : membrane) (qs : list var)
+Definition qubits_to_move (loc : current_qubit_loc) (target : membrane) (qs : list var)
   : list var :=
-  filter (fun q => negb (var_eqb (loc q) target_mem)) qs.
+  filter (fun q => negb (var_eqb (loc q) target)) qs.
+(*
+Definition update_loc_for (loc : current_qubit_loc) (qs : list var) (target : membrane)
+  : current_qubit_loc :=
+  fun q => if existsb (fun x => var_eqb x q) qs then target else loc q.
 
+Definition qubits_to_move (loc : current_qubit_loc) (target : membrane) (qs : list var) :=
+  filter (fun q => negb (var_eqb (loc q) target)) qs.
+*)
 Fixpoint gen_prog_core
   (moO : op_mem_assign)
   (remaining : list exp)
   (current_loc : current_qubit_loc)
-  (acc_config : config)
-  (fresh_counter : nat)
+  (acc : config)
+  (fresh : nat)
   : config * nat * current_qubit_loc :=
   match remaining with
-  | [] =>
-      (acc_config, fresh_counter, current_loc)
-
-  | op :: rest =>
-      let target_mem := moO op in
+  | [] => (acc, fresh, current_loc)
+  | op :: tl =>
+      let target := moO op in
       let qs := vars_of_exp op in
-      let to_move := qubits_to_move current_loc target_mem qs in
-
+      let to_move := qubits_to_move current_loc target qs in
       let '(acc1, fresh1, loc1) :=
         match to_move with
-        | [] => (acc_config, fresh_counter, current_loc)
-        | _  =>
-            let '(cfg_s, fresh_s) :=
-              insert_teleport_sends acc_config to_move fresh_counter target_mem in
-            let '(cfg_sr, fresh_sr, loc_sr) :=
-              insert_teleport_receives cfg_s to_move fresh_s target_mem current_loc in
-
-            let loc_fixed := update_loc_for loc_sr to_move target_mem in
-            (cfg_sr, fresh_sr, loc_fixed)
+        | [] => (acc, fresh, current_loc)
+        | _ =>
+            let '(cfg1, f1) := insert_teleport_sends acc to_move fresh target in
+            let '(cfg2, f2, loc2) :=
+              insert_teleport_receives cfg1 to_move f1 target current_loc in
+            (cfg2, f2, update_loc_for loc2 to_move target)
         end
       in
-
-      let acc2 := place_operation acc1 target_mem op in
-
-      gen_prog_core moO rest loc1 acc2 fresh1
+      gen_prog_core moO tl loc1 (place_operation acc1 target op) fresh1
   end.
-
 
 Definition gen_prog
   (seq : seq_relation)
-  (moQ_init : qubit_mem_assign)
+  (moQ : qubit_mem_assign)
   (moO : op_mem_assign)
   (ops : op_list)
   : distributed_prog :=
-  let ordered := order_by_seq seq ops in
-  let '(cfg, _fresh, _loc) := gen_prog_core moO ordered moQ_init empty_config 0 in
-  cfg.
+  let '(cfg, _, _) :=
+    gen_prog_core moO (order_by_seq seq ops) moQ empty_config 0
+  in cfg.
 
 (* ========================================================================= *)
-(*               Algorithm 1 – AutoDisQ main search loop                     *)
+(* Algorithm 1 — main AutoDisQ loop                                           *)
 (* ========================================================================= *)
 
-Definition candidate : Type :=
-  (seq_relation * (op_mem_assign * qubit_mem_assign))%type.
 
 Fixpoint auto_disq_search
   (ops : op_list)
-  (avail_mem : membranes)
+  (avail : membranes)
   (hp : hb_relation)
   (seen : list candidate)
   (best : distributed_prog)
-  (best_score : fitness_value)
+  (_ : fitness_value)
   (fuel : nat) : distributed_prog :=
   match fuel with
-  | 0 => best
-  | S fuel' =>
+  | 0%nat => best
+  | S n =>
       let seq := gen_seq seen hp in
-      let '(moO, moQ) := gen_mem seen avail_mem seq in
+      let '(moO, moQ) := gen_mem seen avail seq in
       let prog := gen_prog seq moQ moO ops in
-      let score := fit prog in
-
-      let '(new_best, new_score) :=
-        if score <? best_score then (prog, score) else (best, best_score)
-      in
-
-      auto_disq_search ops avail_mem hp
-        ((seq, (moO, moQ)) :: seen)
-        new_best new_score fuel'
+      auto_disq_search ops avail hp ((seq,(moO,moQ))::seen) prog 0%nat n
   end.
 
-Parameter INF_SCORE : fitness_value.
-Parameter DEFAULT_FUEL : nat.
+
+
 Definition fuel_from_ops (ops : op_list) : nat :=
   length ops * length ops.
 
 Definition auto_disq (ops : op_list) (avail : membranes) : distributed_prog :=
-  let hp := gen_hp ops in
-  let fuel := fuel_from_ops ops in
-  auto_disq_search ops avail hp [] empty_config INF_SCORE fuel.
+  auto_disq_search ops avail (gen_hp ops) [] empty_config 0%nat (fuel_from_ops ops).
 
+
+Definition auto_disq_as_processes (ops : op_list) (avail : membranes) : list process :=
+  flatten_config (auto_disq ops avail).
 
 (* ========================================================================= *)
-(*         Algorithm 3 – Parallelization inside one membrane                 *)
+(* Algorithm 3 — parallelization (identity)                                  *)
 (* ========================================================================= *)
 
-Parameter opt_hp : hb_relation -> seq_relation -> hb_relation.
+Definition opt_hp (hp : hb_relation) (_seq : seq_relation) : hb_relation := hp.
 
-Parameter compute_scc :
-  hb_relation -> list exp -> list (list exp).
+Definition compute_scc (_hp : hb_relation) (ops : list exp) : list (list exp) :=
+  ops :: nil.
 
-Parameter order_ops_in_scc : list exp -> list exp.
+
+Definition order_ops_in_scc (ops : list exp) : list exp := ops.
+
 
 Definition parallelize_in_membrane
-  (hp_local : hb_relation)
-  (seq_local : seq_relation)
-  (ops_in_mem : list exp)
+  (hp : hb_relation)
+  (seq : seq_relation)
+  (ops : list exp)
   : list (list exp) :=
-  let hp_opt := opt_hp hp_local seq_local in
-  let components := compute_scc hp_opt ops_in_mem in
-  map order_ops_in_scc components.
+  compute_scc (opt_hp hp seq) ops.
 
-(* ========================================================================= *)
-(*                  Top-level example usage sketch                           *)
-(* ========================================================================= *)
-
-Parameter example_sequential_shor : op_list.
-Parameter example_membranes : membranes.
+Definition example_sequential_shor : op_list := nil.
+Definition example_membranes : membranes := nil.
 
 Definition distributed_shor : distributed_prog :=
   auto_disq example_sequential_shor example_membranes.
+
+
+Definition my_vars_of_exp := vars_of_exp.
+Definition my_place_operation := place_operation.
+Definition my_insert_teleport_sends := insert_teleport_sends.
+Definition my_insert_teleport_receives := insert_teleport_receives.
+Definition my_empty_config : config := empty_config.
+Definition my_gen_seq := gen_seq.
+Definition my_gen_mem := gen_mem.
+Definition my_fit := fit.
+Definition my_order_by_seq := order_by_seq.
+
+Check my_vars_of_exp.
+
+Set Extraction AutoInline.
+Extraction Inline
+  my_vars_of_exp my_place_operation
+  my_insert_teleport_sends my_insert_teleport_receives
+  my_empty_config my_gen_seq my_gen_mem
+  my_fit my_order_by_seq.
+
