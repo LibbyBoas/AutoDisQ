@@ -850,6 +850,142 @@ Definition auto_disq_alg1_paper
 
 
 
+Definition Smap : Type := list (var * membrane_id).
+Definition locus_myOp (op : myOp) : list var := vars_of_myOp op.
+
+Definition diff_mem
+  (mo_cur : var -> membrane_id)
+  (qs : list var)
+  (l  : membrane_id)
+  : Smap :=
+  fold_right
+    (fun q acc =>
+       let src := mo_cur q in
+       if var_eqb src l then acc else (q, src) :: acc)
+    [] qs.
+
+Fixpoint mem_up_smap
+  (mo_cur : var -> membrane_id)
+  (S : Smap)
+  (l : membrane_id)
+  : var -> membrane_id :=
+  match S with
+  | [] => mo_cur
+  | (q,_) :: tl =>
+      let mo_cur' := fun x => if var_eqb x q then l else mo_cur x in
+      mem_up_smap mo_cur' tl l
+  end.
+
+Fixpoint insert_send
+  (P : config)
+  (Sp : Smap)
+  (name : nat)
+  : config * nat * (list (var * var)) :=
+  match Sp with
+  | [] =>
+      (P, name, [])
+
+  | (q, src) :: tl =>
+    
+      let c : var := name in
+      
+      let alias : var := S name in
+
+      let P1 :=
+        place_operation
+          P
+          src
+          (OpDP (Send c (BA q))) in
+
+      let '(P2, name2, m') :=
+        insert_send P1 tl (name + 2) in
+
+      (P2, name2, (q, alias) :: m')
+  end.
+
+
+Fixpoint insert_rev
+  (P : config) (Sp : Smap) (l : membrane_id) (name : nat)
+  : config * nat :=
+  match Sp with
+  | [] => (P, name)
+
+  | (_q, src) :: tl =>
+      let c : var := name in
+      let alias : var := S name in
+
+      let P1 := place_operation P l (OpDP (Recv c alias)) in
+
+      let P2 := place_reloc P1 l src l in
+
+      insert_rev P2 tl l (name + 2)
+  end.
+
+Fixpoint mem_up (mo_cur : qubit_mem_assign) (qs : list var) (l : membrane_id) : qubit_mem_assign :=
+  match qs with
+  | [] => mo_cur
+  | q :: qs' =>
+      let mo_cur' := fun x => if Nat.eqb x q then l else mo_cur x in
+      mem_up mo_cur' qs' l
+  end.
+
+Definition place
+  (P    : config)
+  (op   : myOp)
+  (l    : membrane_id)
+  (name : nat)
+  : config :=
+  place_operation P l op.
+
+Fixpoint gen_prog_loop_alg2
+  (seq    : list myOp)
+  (mo_cur : var -> membrane_id)      (* mo_cur in the paper *)
+  (moO    : myOp -> membrane_id)
+  (P      : config)
+  (name   : nat)
+  : config :=
+  match seq with
+  | [] =>
+
+      P
+
+  | op :: seq' =>
+
+      let l : membrane_id := moO op in
+
+      let S : Smap := diff_mem mo_cur (locus_myOp op) l in
+
+      let '(P1, name1, mo1) :=
+        match S with
+        | [] =>
+
+            (P, name, ([] : list (var * var)))
+        | _ =>
+  
+            let '(Psend, nameS, renS) := insert_send P S name in
+
+            let '(Prev, nameR) := insert_rev Psend S l nameS in
+            (Prev, nameR, renS)
+        end in
+
+      let mo_cur' : var -> membrane_id := mem_up_smap mo_cur S l in
+
+      let P2 : config := place P1 op l name1 in
+
+      gen_prog_loop_alg2 seq' mo_cur' moO P2 name1
+  end.
+Definition empty_config : config := [].
+
+Definition gen_prog_alg2
+  (seq : list myOp)
+  (moQ : var -> membrane_id)
+  (moO : myOp -> membrane_id)
+  : config :=
+  gen_prog_loop_alg2 seq moQ moO empty_config 0.
+
+
+
+
 
 
 
