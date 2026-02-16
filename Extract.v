@@ -5,14 +5,15 @@ Extraction Language OCaml.
 Require Import DisQ.BasicUtility.
 Require Import DisQ.DisQSyntax.
 
-Extraction Blacklist List String Nat Bool.
+Extraction Blacklist List String Bool.
+
 
 Set Extraction AutoInline.
 Set Extraction Optimize.
 Unset Extraction KeepSingleton.
 
 Require Import DisQ.AUTO.
-
+Require Import DisQ.AUTO_Test.
 
 Extraction
   "autodisq_extract.ml"
@@ -33,7 +34,8 @@ Extraction
   mem_up_smap
 scc_partition_fuel
   scc_partition
-  alg3_loop.
+  alg3_loop
+ P_1 P_3 P_4 P_5 P_6.
 
 
 

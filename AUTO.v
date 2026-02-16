@@ -667,7 +667,8 @@ Fixpoint count_comm_cfg (cfg : config) : nat :=
 Definition fit (P : distributed_prog) : fitness_value :=
   count_comm_cfg P.
 
-Definition INF_SCORE : fitness_value := Nat.pow 10 9.
+Definition INF_SCORE : fitness_value := 1000000000%nat.
+
 
 (* ============================================================ *)
 (*      S-loop encoding                                   *)
