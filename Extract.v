@@ -11,24 +11,24 @@ Set Extraction AutoInline.
 Set Extraction Optimize.
 Unset Extraction KeepSingleton.
 
-Require Import AUTO.
+Require Import DisQ.AUTO.
+
 
 Extraction
   "autodisq_extract.ml"
   auto_disq_alg1_paper
   gen_prog_alg2
   gen_prog_loop_alg2
-gen_prog_paper
+  gen_prog_paper
   auto_parallelize_alg3
   gen_hp
   gen_mem_seed
   gen_seq_many
   fit
   order_by_seq
+  insert_send_recv
   place_operation
   place_reloc
-  insert_send
-  insert_rev
   diff_mem
   mem_up_smap
 scc_partition_fuel
