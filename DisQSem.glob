@@ -1,0 +1,2362 @@
+DIGEST 4d00b3f0273327b5d0228cb5e818e883
+FDisQ.DisQSem
+R15:19 Coq.Reals.Reals <> <> lib
+R37:41 Coq.micromega.Psatz <> <> lib
+R59:76 QuantumLib.Complex <> <> lib
+R94:102 SQIR.SQIR <> <> lib
+R120:142 QuantumLib.VectorStates <> <> lib
+R160:174 SQIR.UnitaryOps <> <> lib
+R192:208 Coq.btauto.Btauto <> <> lib
+R210:224 Coq.NArith.Nnat <> <> lib
+R243:254 DisQ.BasicUtility <> <> lib
+R272:276 DisQ.OQASM <> <> lib
+R294:303 DisQ.OQASMProof <> <> lib
+R321:334 Coq.Logic.Classical_Prop <> <> lib
+R352:359 DisQ.MathSpec <> <> lib
+R377:386 DisQ.DisQSyntax <> <> lib
+R404:410 DisQ.DisQDef <> <> lib
+R428:435 DisQ.DisQKind <> <> lib
+R530:547 Coq.FSets.FMapList <> <> lib
+R565:583 Coq.FSets.FMapFacts <> <> lib
+R601:628 Coq.Structures.OrderedTypeEx <> <> lib
+def 826:844 <> compile_range_state
+R854:856 Coq.Init.Datatypes <> nat ind
+binder 847:847 <> n:1
+binder 849:850 <> st:2
+binder 852:852 <> i:3
+R862:864 DisQ.BasicUtility <> var def
+binder 860:860 <> x:4
+R871:876 DisQ.BasicUtility <> rz_val def
+binder 868:868 <> b:5
+R886:889 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R882:885 DisQ.BasicUtility <> posi def
+R890:892 DisQ.BasicUtility <> val ind
+binder 880:880 <> f:6
+R908:908 DisQ.DisQSem <> n:1 var
+R920:920 DisQ.DisQSem <> f:6 var
+R936:936 Coq.Init.Datatypes <> S constr
+R943:943 DisQ.BasicUtility <> :::x_'['_x_'|->'_x_']' not
+R976:977 DisQ.BasicUtility <> :::x_'['_x_'|->'_x_']' not
+R986:991 DisQ.BasicUtility <> :::x_'['_x_'|->'_x_']' not
+R1015:1016 DisQ.BasicUtility <> :::x_'['_x_'|->'_x_']' not
+R944:962 DisQ.DisQSem <> compile_range_state:7 def
+R975:975 DisQ.DisQSem <> f:6 var
+R973:973 DisQ.DisQSem <> b:5 var
+R971:971 DisQ.DisQSem <> x:4 var
+R969:969 DisQ.DisQSem <> i:3 var
+R966:967 DisQ.DisQSem <> st:2 var
+R978:978 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R980:980 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R985:985 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R979:979 DisQ.DisQSem <> x:4 var
+R983:983 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R981:982 DisQ.DisQSem <> st:2 var
+R992:995 DisQ.BasicUtility <> nval constr
+R998:998 DisQ.DisQSem <> b:5 var
+R1002:1002 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R1001:1001 DisQ.DisQSem <> i:3 var
+R1007:1014 DisQ.MathSpec <> allfalse def
+def 1037:1054 <> compile_ses_state'
+R1059:1061 Coq.Init.Datatypes <> nat ind
+binder 1057:1057 <> i:9
+R1067:1071 DisQ.DisQSyntax <> locus def
+binder 1065:1065 <> l:10
+R1077:1082 DisQ.BasicUtility <> rz_val def
+binder 1075:1075 <> b:11
+R1097:1097 DisQ.DisQSem <> l:10 var
+R1104:1106 Coq.Init.Datatypes <> nil constr
+R1121:1124 DisQ.BasicUtility <> nval constr
+R1126:1130 Coq.Init.Datatypes <> false constr
+R1132:1139 DisQ.MathSpec <> allfalse def
+R1173:1174 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1156:1156 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1158:1158 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1165:1165 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1172:1172 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1159:1162 DisQ.DisQSyntax <> BNum constr
+R1166:1169 DisQ.DisQSyntax <> BNum constr
+R1182:1200 DisQ.DisQSem <> compile_range_state def
+R1204:1204 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R1205:1205 DisQ.DisQSem <> l:10 var
+R1208:1208 DisQ.DisQSem <> l:10 var
+R1210:1210 DisQ.DisQSem <> i:9 var
+R1214:1214 DisQ.DisQSem <> b:11 var
+R1217:1234 DisQ.DisQSem <> compile_ses_state':12 def
+R1249:1249 DisQ.DisQSem <> b:11 var
+R1238:1239 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R1243:1243 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R1237:1237 DisQ.DisQSem <> i:9 var
+R1241:1241 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R1242:1242 DisQ.DisQSem <> l:10 var
+R1267:1268 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1276:1293 DisQ.DisQSem <> compile_ses_state':12 def
+R1300:1300 DisQ.DisQSem <> b:11 var
+R1295:1295 DisQ.DisQSem <> i:9 var
+def 1321:1337 <> compile_ses_state
+R1342:1346 DisQ.DisQSyntax <> locus def
+binder 1340:1340 <> l:14
+R1352:1357 DisQ.BasicUtility <> rz_val def
+binder 1350:1350 <> b:15
+R1363:1380 DisQ.DisQSem <> compile_ses_state' def
+R1384:1384 DisQ.DisQSem <> l:14 var
+R1386:1386 DisQ.DisQSem <> b:15 var
+def 1399:1414 <> turn_oqasm_range
+R1429:1431 Coq.Init.Datatypes <> nat ind
+binder 1417:1420 <> rmax:16
+binder 1422:1422 <> n:17
+binder 1424:1425 <> st:18
+binder 1427:1427 <> i:19
+R1437:1439 DisQ.BasicUtility <> var def
+binder 1435:1435 <> x:20
+R1449:1452 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1445:1448 DisQ.BasicUtility <> posi def
+R1453:1455 DisQ.BasicUtility <> val ind
+binder 1443:1443 <> f:21
+R1461:1466 DisQ.BasicUtility <> rz_val def
+binder 1459:1459 <> r:22
+R1473:1478 DisQ.BasicUtility <> rz_val def
+binder 1470:1470 <> b:23
+R1483:1488 Coq.Init.Datatypes <> option ind
+R1497:1499 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R1491:1496 DisQ.BasicUtility <> rz_val def
+R1500:1505 DisQ.BasicUtility <> rz_val def
+R1521:1521 DisQ.DisQSem <> n:17 var
+R1533:1536 Coq.Init.Datatypes <> Some constr
+R1538:1538 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1540:1540 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1542:1542 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1539:1539 DisQ.DisQSem <> r:22 var
+R1541:1541 DisQ.DisQSem <> b:23 var
+R1558:1558 Coq.Init.Datatypes <> S constr
+R1572:1587 DisQ.DisQSem <> turn_oqasm_range:24 def
+R1607:1607 DisQ.DisQSem <> b:23 var
+R1605:1605 DisQ.DisQSem <> r:22 var
+R1603:1603 DisQ.DisQSem <> f:21 var
+R1601:1601 DisQ.DisQSem <> x:20 var
+R1599:1599 DisQ.DisQSem <> i:19 var
+R1596:1597 DisQ.DisQSem <> st:18 var
+R1589:1592 DisQ.DisQSem <> rmax:16 var
+R1624:1627 Coq.Init.Datatypes <> None constr
+R1632:1635 Coq.Init.Datatypes <> None constr
+R1648:1651 Coq.Init.Datatypes <> Some constr
+R1653:1653 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1656:1656 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1659:1659 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1670:1670 DisQ.DisQSem <> f:21 var
+R1672:1672 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1674:1674 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1679:1679 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1673:1673 DisQ.DisQSem <> x:20 var
+R1677:1677 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R1675:1676 DisQ.DisQSem <> st:18 var
+R1686:1689 DisQ.BasicUtility <> nval constr
+R1700:1703 Coq.Init.Datatypes <> Some constr
+R1705:1705 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1725:1726 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1745:1745 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1706:1713 DisQ.DisQDef <> n_rotate def
+R1715:1718 DisQ.DisQSem <> rmax:16 var
+R1727:1732 QuantumLib.Bits <> update def
+R1739:1739 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R1738:1738 DisQ.DisQSem <> i:19 var
+R1799:1802 Coq.Init.Datatypes <> None constr
+def 1874:1888 <> turn_oqasm_ses'
+R1898:1900 Coq.Init.Datatypes <> nat ind
+binder 1891:1894 <> rmax:26
+binder 1896:1896 <> i:27
+R1906:1910 DisQ.DisQSyntax <> locus def
+binder 1904:1904 <> l:28
+R1920:1923 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1916:1919 DisQ.BasicUtility <> posi def
+R1924:1926 DisQ.BasicUtility <> val ind
+binder 1914:1914 <> f:29
+R1932:1937 DisQ.BasicUtility <> rz_val def
+binder 1930:1930 <> b:30
+R1952:1952 DisQ.DisQSem <> l:28 var
+R1959:1961 Coq.Init.Datatypes <> nil constr
+R1966:1969 Coq.Init.Datatypes <> Some constr
+R1971:1971 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1980:1981 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1983:1983 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1972:1979 DisQ.MathSpec <> allfalse def
+R1982:1982 DisQ.DisQSem <> b:30 var
+R2016:2017 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1999:1999 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2001:2001 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2008:2008 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2015:2015 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2002:2005 DisQ.DisQSyntax <> BNum constr
+R2009:2012 DisQ.DisQSyntax <> BNum constr
+R2047:2061 DisQ.DisQSem <> turn_oqasm_ses':31 def
+R2083:2083 DisQ.DisQSem <> b:30 var
+R2081:2081 DisQ.DisQSem <> f:29 var
+R2070:2071 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R2075:2075 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R2069:2069 DisQ.DisQSem <> i:27 var
+R2073:2073 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R2074:2074 DisQ.DisQSem <> l:28 var
+R2063:2066 DisQ.DisQSem <> rmax:26 var
+R2090:2093 Coq.Init.Datatypes <> None constr
+R2098:2101 Coq.Init.Datatypes <> None constr
+R2120:2123 Coq.Init.Datatypes <> Some constr
+R2125:2125 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2128:2128 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2131:2131 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2136:2151 DisQ.DisQSem <> turn_oqasm_range def
+R2153:2156 DisQ.DisQSem <> rmax:26 var
+R2160:2160 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R2161:2161 DisQ.DisQSem <> l:28 var
+R2164:2164 DisQ.DisQSem <> l:28 var
+R2166:2166 DisQ.DisQSem <> i:27 var
+R2170:2170 DisQ.DisQSem <> f:29 var
+R2215:2218 Coq.Init.Datatypes <> None constr
+def 2239:2252 <> turn_oqasm_ses
+binder 2254:2257 <> rmax:33
+R2262:2266 DisQ.DisQSyntax <> locus def
+binder 2260:2260 <> l:34
+R2276:2279 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2272:2275 DisQ.BasicUtility <> posi def
+R2280:2282 DisQ.BasicUtility <> val ind
+binder 2270:2270 <> f:35
+binder 2285:2285 <> b:36
+R2291:2305 DisQ.DisQSem <> turn_oqasm_ses' def
+R2307:2310 DisQ.DisQSem <> rmax:33 var
+R2314:2314 DisQ.DisQSem <> l:34 var
+R2316:2316 DisQ.DisQSem <> f:35 var
+R2318:2318 DisQ.DisQSem <> b:36 var
+def 2333:2339 <> cover_n
+R2344:2349 DisQ.BasicUtility <> rz_val def
+binder 2342:2342 <> f:37
+R2355:2357 Coq.Init.Datatypes <> nat ind
+binder 2353:2353 <> n:38
+binder 2367:2367 <> i:39
+R2376:2379 Coq.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R2375:2375 DisQ.DisQSem <> i:39 var
+R2380:2380 DisQ.DisQSem <> n:38 var
+R2398:2398 DisQ.DisQSem <> f:37 var
+R2400:2400 DisQ.DisQSem <> i:39 var
+R2387:2391 Coq.Init.Datatypes <> false constr
+ind 2414:2424 <> match_value
+constr 2474:2483 <> match_nval
+constr 2582:2591 <> match_hval
+constr 2683:2692 <> match_cval
+R2431:2434 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2428:2430 Coq.Init.Datatypes <> nat ind
+R2445:2448 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2435:2444 DisQ.DisQDef <> state_elem ind
+R2459:2462 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2449:2458 DisQ.DisQDef <> state_elem ind
+binder 2494:2494 <> n:42
+binder 2496:2496 <> p:43
+binder 2498:2499 <> r1:44
+binder 2501:2502 <> r2:45
+R2505:2505 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2536:2540 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 2513:2513 <> i:46
+R2521:2524 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2517:2519 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R2516:2516 DisQ.DisQSem <> i:46 var
+R2520:2520 DisQ.DisQSem <> n:42 var
+R2529:2531 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2525:2526 DisQ.DisQSem <> r1:44 var
+R2528:2528 DisQ.DisQSem <> i:46 var
+R2532:2533 DisQ.DisQSem <> r2:45 var
+R2535:2535 DisQ.DisQSem <> i:46 var
+R2541:2551 DisQ.DisQSem <> match_value:40 ind
+R2568:2571 DisQ.DisQDef <> Nval constr
+R2573:2573 DisQ.DisQSem <> p:43 var
+R2575:2576 DisQ.DisQSem <> r2:45 var
+R2556:2559 DisQ.DisQDef <> Nval constr
+R2561:2561 DisQ.DisQSem <> p:43 var
+R2563:2564 DisQ.DisQSem <> r1:44 var
+R2553:2553 DisQ.DisQSem <> n:42 var
+binder 2601:2601 <> n:47
+binder 2603:2604 <> r1:48
+binder 2606:2607 <> r2:49
+R2610:2610 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2641:2645 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 2618:2618 <> i:50
+R2626:2629 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2622:2624 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R2621:2621 DisQ.DisQSem <> i:50 var
+R2625:2625 DisQ.DisQSem <> n:47 var
+R2634:2636 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2630:2631 DisQ.DisQSem <> r1:48 var
+R2633:2633 DisQ.DisQSem <> i:50 var
+R2637:2638 DisQ.DisQSem <> r2:49 var
+R2640:2640 DisQ.DisQSem <> i:50 var
+R2646:2656 DisQ.DisQSem <> match_value:40 ind
+R2671:2674 DisQ.DisQDef <> Hval constr
+R2676:2677 DisQ.DisQSem <> r2:49 var
+R2661:2664 DisQ.DisQDef <> Hval constr
+R2666:2667 DisQ.DisQSem <> r1:48 var
+R2658:2658 DisQ.DisQSem <> n:47 var
+binder 2702:2702 <> n:51
+binder 2704:2704 <> m:52
+binder 2706:2707 <> r1:53
+binder 2709:2710 <> r2:54
+R2713:2713 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2827:2831 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 2721:2721 <> j:55
+R2729:2732 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2725:2727 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R2724:2724 DisQ.DisQSem <> j:55 var
+R2728:2728 DisQ.DisQSem <> m:52 var
+R2756:2775 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R2826:2826 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R2743:2745 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2733:2735 Coq.Init.Datatypes <> fst def
+R2738:2739 DisQ.DisQSem <> r1:53 var
+R2741:2741 DisQ.DisQSem <> j:55 var
+R2746:2748 Coq.Init.Datatypes <> fst def
+R2751:2752 DisQ.DisQSem <> r2:54 var
+R2754:2754 DisQ.DisQSem <> j:55 var
+binder 2783:2783 <> i:56
+R2791:2794 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2787:2789 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R2786:2786 DisQ.DisQSem <> i:56 var
+R2790:2790 DisQ.DisQSem <> n:51 var
+R2809:2811 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2796:2798 Coq.Init.Datatypes <> snd def
+R2801:2802 DisQ.DisQSem <> r1:53 var
+R2804:2804 DisQ.DisQSem <> j:55 var
+R2808:2808 DisQ.DisQSem <> i:56 var
+R2813:2815 Coq.Init.Datatypes <> snd def
+R2818:2819 DisQ.DisQSem <> r2:54 var
+R2821:2821 DisQ.DisQSem <> j:55 var
+R2825:2825 DisQ.DisQSem <> i:56 var
+R2832:2842 DisQ.DisQSem <> match_value:40 ind
+R2859:2862 DisQ.DisQDef <> Cval constr
+R2864:2864 DisQ.DisQSem <> m:52 var
+R2866:2867 DisQ.DisQSem <> r2:54 var
+R2847:2850 DisQ.DisQDef <> Cval constr
+R2852:2852 DisQ.DisQSem <> m:52 var
+R2854:2855 DisQ.DisQSem <> r1:53 var
+R2844:2844 DisQ.DisQSem <> n:51 var
+def 2884:2895 <> match_values
+R2905:2910 DisQ.DisQDef <> qstate def
+binder 2898:2899 <> S1:57
+binder 2901:2902 <> S2:58
+R2918:2924 Coq.Lists.List <> Forall2 ind
+R3151:3152 DisQ.DisQSem <> S2:58 var
+R3148:3149 DisQ.DisQSem <> S1:57 var
+binder 2931:2932 <> s1:59
+binder 2934:2935 <> s2:60
+R2958:2958 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2961:2961 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2964:2964 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2959:2960 DisQ.DisQSem <> s1:59 var
+R2962:2963 DisQ.DisQSem <> s2:60 var
+R2971:2971 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2977:2978 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2986:2986 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2972:2972 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2974:2974 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2976:2976 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2979:2979 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2982:2982 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2985:2985 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3010:3026 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3140:3140 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3005:3007 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3033:3039 DisQ.DisQDef <> ses_len def
+R3048:3051 Coq.Init.Datatypes <> Some constr
+R3058:3068 DisQ.DisQSem <> match_value ind
+R3111:3114 Coq.Init.Datatypes <> None constr
+R3119:3123 Coq.Init.Logic <> False ind
+def 3167:3174 <> eval_nor
+R3182:3184 Coq.Init.Datatypes <> nat ind
+binder 3177:3180 <> rmax:61
+R3192:3195 DisQ.DisQDef <> aenv def
+binder 3188:3190 <> env:62
+R3201:3205 DisQ.DisQSyntax <> locus def
+binder 3199:3199 <> l:63
+R3211:3211 QuantumLib.Complex <> C def
+binder 3209:3209 <> r:64
+R3217:3222 DisQ.BasicUtility <> rz_val def
+binder 3215:3215 <> b:65
+R3228:3230 DisQ.DisQSyntax <> exp ind
+binder 3226:3226 <> e:66
+R3245:3260 DisQ.DisQDef <> compile_ses_qenv def
+R3262:3264 DisQ.DisQSem <> env:62 var
+R3266:3266 DisQ.DisQSem <> l:63 var
+R3273:3273 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3275:3275 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3278:3278 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3274:3274 Coq.Reals.Rtopology <> f proj
+R3296:3315 DisQ.DisQDef <> compile_exp_to_oqasm def
+R3317:3317 DisQ.DisQSem <> e:66 var
+R3340:3343 Coq.Init.Datatypes <> None constr
+R3348:3351 Coq.Init.Datatypes <> None constr
+R3369:3372 Coq.Init.Datatypes <> Some constr
+R3394:3400 DisQ.DisQDef <> ses_len def
+R3402:3402 DisQ.DisQSem <> l:63 var
+R3409:3412 Coq.Init.Datatypes <> None constr
+R3417:3420 Coq.Init.Datatypes <> None constr
+R3436:3439 Coq.Init.Datatypes <> Some constr
+R3465:3478 DisQ.DisQSem <> turn_oqasm_ses def
+R3480:3483 DisQ.DisQSem <> rmax:61 var
+R3485:3485 DisQ.DisQSem <> l:63 var
+R3488:3494 DisQ.OQASM <> exp_sem def
+R3502:3518 DisQ.DisQSem <> compile_ses_state def
+R3520:3520 DisQ.DisQSem <> l:63 var
+R3522:3522 DisQ.DisQSem <> b:65 var
+R3527:3533 DisQ.DisQSem <> cover_n def
+R3535:3535 DisQ.DisQSem <> b:65 var
+R3562:3565 Coq.Init.Datatypes <> None constr
+R3570:3573 Coq.Init.Datatypes <> None constr
+R3595:3598 Coq.Init.Datatypes <> Some constr
+R3600:3600 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3603:3603 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3606:3606 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3611:3614 Coq.Init.Datatypes <> Some constr
+R3616:3616 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3660:3661 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3664:3664 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3619:3621 QuantumLib.Complex <> ::C_scope:x_'*'_x not
+R3656:3656 QuantumLib.Complex <> ::C_scope:x_'*'_x not
+R3618:3618 DisQ.DisQSem <> r:64 var
+R3622:3625 QuantumLib.Complex <> Cexp def
+R3632:3635 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R3654:3654 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R3629:3629 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R3630:3631 Coq.Reals.Rtrigo1 <> PI def
+R3636:3645 DisQ.DisQDef <> turn_angle def
+R3650:3653 DisQ.DisQSem <> rmax:61 var
+def 3728:3734 <> eval_ch
+R3742:3744 Coq.Init.Datatypes <> nat ind
+binder 3737:3740 <> rmax:67
+R3752:3755 DisQ.DisQDef <> aenv def
+binder 3748:3750 <> env:68
+R3761:3765 DisQ.DisQSyntax <> locus def
+binder 3759:3759 <> l:69
+R3771:3773 Coq.Init.Datatypes <> nat ind
+binder 3769:3769 <> m:70
+binder 3776:3776 <> f:71
+R3781:3783 DisQ.DisQSyntax <> exp ind
+binder 3779:3779 <> e:72
+R3798:3798 DisQ.DisQSem <> m:70 var
+R3810:3813 Coq.Init.Datatypes <> Some constr
+R3825:3825 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3828:3830 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3839:3839 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3826:3827 QuantumLib.Complex <> C0 abbrev
+R3831:3838 DisQ.MathSpec <> allfalse def
+R3854:3854 Coq.Init.Datatypes <> S constr
+R3867:3874 DisQ.DisQSem <> eval_nor def
+R3876:3879 DisQ.DisQSem <> rmax:67 var
+R3881:3883 DisQ.DisQSem <> env:68 var
+R3885:3885 DisQ.DisQSem <> l:69 var
+R3888:3890 Coq.Init.Datatypes <> fst def
+R3893:3893 DisQ.DisQSem <> f:71 var
+R3900:3902 Coq.Init.Datatypes <> snd def
+R3905:3905 DisQ.DisQSem <> f:71 var
+R3911:3911 DisQ.DisQSem <> e:72 var
+R3918:3921 Coq.Init.Datatypes <> None constr
+R3926:3929 Coq.Init.Datatypes <> None constr
+R3947:3950 Coq.Init.Datatypes <> Some constr
+R3952:3952 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3955:3955 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3958:3958 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3969:3975 DisQ.DisQSem <> eval_ch:73 def
+R3992:3992 DisQ.DisQSem <> e:72 var
+R3990:3990 DisQ.DisQSem <> f:71 var
+R3986:3986 DisQ.DisQSem <> l:69 var
+R3982:3984 DisQ.DisQSem <> env:68 var
+R3977:3980 DisQ.DisQSem <> rmax:67 var
+R3999:4002 Coq.Init.Datatypes <> None constr
+R4007:4010 Coq.Init.Datatypes <> None constr
+R4031:4034 Coq.Init.Datatypes <> Some constr
+R4042:4045 Coq.Init.Datatypes <> Some constr
+R4048:4053 QuantumLib.Bits <> update def
+R4060:4060 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4063:4065 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4068:4068 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+def 4121:4131 <> eval_to_had
+R4136:4138 Coq.Init.Datatypes <> nat ind
+binder 4134:4134 <> n:75
+R4144:4149 DisQ.BasicUtility <> rz_val def
+binder 4142:4142 <> b:76
+binder 4160:4160 <> i:77
+R4169:4172 Coq.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R4168:4168 DisQ.DisQSem <> i:77 var
+R4173:4173 DisQ.DisQSem <> n:75 var
+R4211:4218 DisQ.MathSpec <> allfalse def
+R4181:4186 QuantumLib.Bits <> update def
+R4200:4200 DisQ.DisQSem <> b:76 var
+R4202:4202 DisQ.DisQSem <> i:77 var
+R4188:4195 DisQ.MathSpec <> allfalse def
+def 4234:4244 <> eval_to_nor
+R4249:4251 Coq.Init.Datatypes <> nat ind
+binder 4247:4247 <> n:78
+R4260:4263 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4257:4259 Coq.Init.Datatypes <> nat ind
+R4264:4269 DisQ.BasicUtility <> rz_val def
+binder 4255:4255 <> b:79
+binder 4280:4280 <> i:80
+R4289:4292 Coq.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R4288:4288 DisQ.DisQSem <> i:80 var
+R4293:4293 DisQ.DisQSem <> n:78 var
+R4311:4315 Coq.Init.Datatypes <> false constr
+R4300:4300 DisQ.DisQSem <> b:79 var
+R4302:4302 DisQ.DisQSem <> i:80 var
+def 4331:4342 <> all_nor_mode
+R4351:4354 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4347:4350 DisQ.BasicUtility <> posi def
+R4355:4357 DisQ.BasicUtility <> val ind
+binder 4345:4345 <> f:81
+binder 4370:4370 <> x:82
+binder 4372:4372 <> n:83
+R4375:4388 DisQ.OQASM <> right_mode_val ind
+R4390:4398 DisQ.OQASM <> Nor constr
+R4401:4401 DisQ.DisQSem <> f:81 var
+R4403:4403 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4405:4405 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4407:4407 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4404:4404 DisQ.DisQSem <> x:82 var
+R4406:4406 DisQ.DisQSem <> n:83 var
+def 4460:4471 <> eval_eq_bool
+R4479:4482 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4476:4478 Coq.Init.Datatypes <> nat ind
+R4484:4486 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R4483:4483 QuantumLib.Complex <> C def
+R4487:4492 DisQ.BasicUtility <> rz_val def
+binder 4474:4474 <> f:84
+R4505:4507 Coq.Init.Datatypes <> nat ind
+binder 4496:4496 <> m:85
+binder 4498:4501 <> size:86
+binder 4503:4503 <> v:87
+R4521:4521 DisQ.DisQSem <> m:85 var
+R4533:4533 DisQ.DisQSem <> f:84 var
+R4548:4548 Coq.Init.Datatypes <> S constr
+R4556:4561 QuantumLib.Bits <> update def
+R4613:4613 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4624:4624 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4712:4712 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4614:4616 Coq.Init.Datatypes <> fst def
+R4619:4619 DisQ.DisQSem <> f:84 var
+R4625:4630 QuantumLib.Bits <> update def
+R4651:4654 Coq.Init.Datatypes <> xorb def
+R4694:4696 Coq.Init.Datatypes <> snd def
+R4699:4699 DisQ.DisQSem <> f:84 var
+R4706:4709 DisQ.DisQSem <> size:86 var
+R4657:4657 Coq.Arith.PeanoNat <> ::nat_scope:x_'=?'_x not
+R4684:4688 Coq.Arith.PeanoNat <> ::nat_scope:x_'=?'_x not
+R4658:4665 DisQ.DisQDef <> a_nat2fb def
+R4668:4670 Coq.Init.Datatypes <> snd def
+R4673:4673 DisQ.DisQSem <> f:84 var
+R4680:4683 DisQ.DisQSem <> size:86 var
+R4689:4689 DisQ.DisQSem <> v:87 var
+R4645:4648 DisQ.DisQSem <> size:86 var
+R4633:4635 Coq.Init.Datatypes <> snd def
+R4638:4638 DisQ.DisQSem <> f:84 var
+R4564:4575 DisQ.DisQSem <> eval_eq_bool:88 def
+R4587:4587 DisQ.DisQSem <> v:87 var
+R4582:4585 DisQ.DisQSem <> size:86 var
+R4577:4577 DisQ.DisQSem <> f:84 var
+def 4731:4742 <> eval_lt_bool
+R4750:4753 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4747:4749 Coq.Init.Datatypes <> nat ind
+R4755:4757 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R4754:4754 QuantumLib.Complex <> C def
+R4758:4763 DisQ.BasicUtility <> rz_val def
+binder 4745:4745 <> f:90
+R4776:4778 Coq.Init.Datatypes <> nat ind
+binder 4767:4767 <> m:91
+binder 4769:4772 <> size:92
+binder 4774:4774 <> v:93
+R4792:4792 DisQ.DisQSem <> m:91 var
+R4804:4804 DisQ.DisQSem <> f:90 var
+R4819:4819 Coq.Init.Datatypes <> S constr
+R4827:4832 QuantumLib.Bits <> update def
+R4884:4884 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4895:4895 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4983:4983 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4885:4887 Coq.Init.Datatypes <> fst def
+R4890:4890 DisQ.DisQSem <> f:90 var
+R4896:4901 QuantumLib.Bits <> update def
+R4922:4925 Coq.Init.Datatypes <> xorb def
+R4965:4967 Coq.Init.Datatypes <> snd def
+R4970:4970 DisQ.DisQSem <> f:90 var
+R4977:4980 DisQ.DisQSem <> size:92 var
+R4928:4928 Coq.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R4955:4959 Coq.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R4929:4936 DisQ.DisQDef <> a_nat2fb def
+R4939:4941 Coq.Init.Datatypes <> snd def
+R4944:4944 DisQ.DisQSem <> f:90 var
+R4951:4954 DisQ.DisQSem <> size:92 var
+R4960:4960 DisQ.DisQSem <> v:93 var
+R4916:4919 DisQ.DisQSem <> size:92 var
+R4904:4906 Coq.Init.Datatypes <> snd def
+R4909:4909 DisQ.DisQSem <> f:90 var
+R4835:4846 DisQ.DisQSem <> eval_lt_bool:94 def
+R4858:4858 DisQ.DisQSem <> v:93 var
+R4853:4856 DisQ.DisQSem <> size:92 var
+R4848:4848 DisQ.DisQSem <> f:90 var
+def 5002:5014 <> eval_rlt_bool
+R5022:5025 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5019:5021 Coq.Init.Datatypes <> nat ind
+R5027:5029 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R5026:5026 QuantumLib.Complex <> C def
+R5030:5035 DisQ.BasicUtility <> rz_val def
+binder 5017:5017 <> f:96
+R5048:5050 Coq.Init.Datatypes <> nat ind
+binder 5039:5039 <> m:97
+binder 5041:5044 <> size:98
+binder 5046:5046 <> v:99
+R5064:5064 DisQ.DisQSem <> m:97 var
+R5076:5076 DisQ.DisQSem <> f:96 var
+R5091:5091 Coq.Init.Datatypes <> S constr
+R5099:5104 QuantumLib.Bits <> update def
+R5157:5157 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5168:5168 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5256:5256 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5158:5160 Coq.Init.Datatypes <> fst def
+R5163:5163 DisQ.DisQSem <> f:96 var
+R5169:5174 QuantumLib.Bits <> update def
+R5195:5198 Coq.Init.Datatypes <> xorb def
+R5238:5240 Coq.Init.Datatypes <> snd def
+R5243:5243 DisQ.DisQSem <> f:96 var
+R5250:5253 DisQ.DisQSem <> size:98 var
+R5202:5206 Coq.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5233:5233 Coq.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5201:5201 DisQ.DisQSem <> v:99 var
+R5207:5214 DisQ.DisQDef <> a_nat2fb def
+R5217:5219 Coq.Init.Datatypes <> snd def
+R5222:5222 DisQ.DisQSem <> f:96 var
+R5229:5232 DisQ.DisQSem <> size:98 var
+R5189:5192 DisQ.DisQSem <> size:98 var
+R5177:5179 Coq.Init.Datatypes <> snd def
+R5182:5182 DisQ.DisQSem <> f:96 var
+R5107:5119 DisQ.DisQSem <> eval_rlt_bool:100 def
+R5131:5131 DisQ.DisQSem <> v:99 var
+R5126:5129 DisQ.DisQSem <> size:98 var
+R5121:5121 DisQ.DisQSem <> f:96 var
+def 5275:5288 <> grab_bool_elem
+R5296:5299 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5293:5295 Coq.Init.Datatypes <> nat ind
+R5301:5303 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R5300:5300 QuantumLib.Complex <> C def
+R5304:5309 DisQ.BasicUtility <> rz_val def
+binder 5291:5291 <> f:102
+R5320:5322 Coq.Init.Datatypes <> nat ind
+binder 5313:5313 <> m:103
+binder 5315:5318 <> size:104
+R5336:5336 DisQ.DisQSem <> m:103 var
+R5348:5348 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5350:5351 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5374:5375 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5361:5361 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5364:5364 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5373:5373 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5362:5363 QuantumLib.Complex <> C0 abbrev
+R5365:5372 DisQ.MathSpec <> allfalse def
+R5390:5390 Coq.Init.Datatypes <> S constr
+R5402:5404 Coq.Init.Datatypes <> snd def
+R5407:5407 DisQ.DisQSem <> f:102 var
+R5414:5417 DisQ.DisQSem <> size:104 var
+R5541:5554 DisQ.DisQSem <> grab_bool_elem:105 def
+R5561:5564 DisQ.DisQSem <> size:104 var
+R5556:5556 DisQ.DisQSem <> f:102 var
+R5449:5462 DisQ.DisQSem <> grab_bool_elem:105 def
+R5469:5472 DisQ.DisQSem <> size:104 var
+R5464:5464 DisQ.DisQSem <> f:102 var
+R5479:5479 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5481:5481 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5485:5485 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5490:5490 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5494:5494 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5514:5514 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5492:5492 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R5495:5500 QuantumLib.Bits <> update def
+R5509:5509 DisQ.DisQSem <> f:102 var
+def 5585:5593 <> grab_bool
+binder 5595:5595 <> f:107
+binder 5597:5597 <> m:108
+binder 5599:5602 <> size:109
+R5607:5620 DisQ.DisQSem <> grab_bool_elem def
+R5622:5622 DisQ.DisQSem <> f:107 var
+R5624:5624 DisQ.DisQSem <> m:108 var
+R5631:5633 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R5627:5630 DisQ.DisQSem <> size:109 var
+def 5651:5663 <> get_core_bexp
+R5668:5671 DisQ.DisQSyntax <> bexp ind
+binder 5666:5666 <> b:110
+R5683:5683 DisQ.DisQSem <> b:110 var
+R5691:5693 DisQ.DisQSyntax <> BEq constr
+R5719:5722 Coq.Init.Datatypes <> Some constr
+R5725:5729 DisQ.DisQSyntax <> BTest constr
+R5738:5740 DisQ.DisQSyntax <> BLt constr
+R5753:5756 Coq.Init.Datatypes <> Some constr
+R5759:5763 DisQ.DisQSyntax <> BTest constr
+R5778:5781 Coq.Init.Datatypes <> None constr
+ind 5799:5807 <> eval_bexp
+constr 5853:5861 <> beq_sem_1
+constr 6176:6184 <> beq_sem_2
+constr 6508:6516 <> blt_sem_1
+constr 6844:6852 <> blt_sem_2
+R5817:5820 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5811:5816 DisQ.DisQDef <> qstate def
+R5825:5828 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5821:5824 DisQ.DisQSyntax <> bexp ind
+R5835:5838 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5829:5834 DisQ.DisQDef <> qstate def
+binder 5872:5872 <> s:114
+binder 5874:5874 <> x:115
+binder 5876:5876 <> a:116
+binder 5878:5878 <> y:117
+binder 5880:5880 <> z:118
+binder 5882:5882 <> i:119
+binder 5884:5884 <> l:120
+binder 5886:5886 <> n:121
+binder 5888:5888 <> m:122
+binder 5890:5890 <> f:123
+R5913:5937 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5904:5906 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5893:5901 DisQ.DisQKind <> simp_aexp def
+R5903:5903 DisQ.DisQSem <> a:116 var
+R5907:5910 Coq.Init.Datatypes <> Some constr
+R5912:5912 DisQ.DisQSem <> y:117 var
+R5938:5946 DisQ.DisQSem <> eval_bexp:112 ind
+R6165:6166 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6090:6090 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6134:6134 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6164:6164 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6108:6109 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6091:6091 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6093:6093 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6100:6100 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6107:6107 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6092:6092 DisQ.DisQSem <> x:115 var
+R6094:6097 DisQ.DisQSyntax <> BNum constr
+R6101:6104 DisQ.DisQSyntax <> BNum constr
+R6106:6106 DisQ.DisQSem <> n:121 var
+R6131:6132 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6110:6110 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6112:6112 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6119:6119 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6130:6130 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6111:6111 DisQ.DisQSem <> z:118 var
+R6113:6116 DisQ.DisQSyntax <> BNum constr
+R6118:6118 DisQ.DisQSem <> i:119 var
+R6120:6123 DisQ.DisQSyntax <> BNum constr
+R6126:6126 Coq.Init.Datatypes <> S constr
+R6128:6128 DisQ.DisQSem <> i:119 var
+R6133:6133 DisQ.DisQSem <> l:120 var
+R6135:6138 DisQ.DisQDef <> Cval constr
+R6140:6140 DisQ.DisQSem <> m:122 var
+R6143:6154 DisQ.DisQSem <> eval_eq_bool def
+R6156:6156 DisQ.DisQSem <> f:123 var
+R6158:6158 DisQ.DisQSem <> m:122 var
+R6160:6160 DisQ.DisQSem <> n:121 var
+R6162:6162 DisQ.DisQSem <> y:117 var
+R6167:6167 DisQ.DisQSem <> s:114 var
+R6034:6036 DisQ.DisQSyntax <> BEq constr
+R6039:6040 DisQ.DisQSyntax <> BA constr
+R6042:6042 DisQ.DisQSem <> x:115 var
+R6046:6046 DisQ.DisQSem <> a:116 var
+R6049:6049 DisQ.DisQSem <> z:118 var
+R6052:6054 DisQ.DisQSyntax <> Num constr
+R6056:6056 DisQ.DisQSem <> i:119 var
+R6003:6004 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R5949:5949 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5993:5993 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6002:6002 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5967:5968 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R5950:5950 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5952:5952 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5959:5959 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5966:5966 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5951:5951 DisQ.DisQSem <> x:115 var
+R5953:5956 DisQ.DisQSyntax <> BNum constr
+R5960:5963 DisQ.DisQSyntax <> BNum constr
+R5965:5965 DisQ.DisQSem <> n:121 var
+R5990:5991 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R5969:5969 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5971:5971 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5978:5978 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5989:5989 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5970:5970 DisQ.DisQSem <> z:118 var
+R5972:5975 DisQ.DisQSyntax <> BNum constr
+R5977:5977 DisQ.DisQSem <> i:119 var
+R5979:5982 DisQ.DisQSyntax <> BNum constr
+R5985:5985 Coq.Init.Datatypes <> S constr
+R5987:5987 DisQ.DisQSem <> i:119 var
+R5992:5992 DisQ.DisQSem <> l:120 var
+R5994:5997 DisQ.DisQDef <> Cval constr
+R5999:5999 DisQ.DisQSem <> m:122 var
+R6001:6001 DisQ.DisQSem <> f:123 var
+R6005:6005 DisQ.DisQSem <> s:114 var
+binder 6195:6195 <> s:124
+binder 6197:6197 <> x:125
+binder 6199:6199 <> a:126
+binder 6201:6201 <> y:127
+binder 6203:6203 <> z:128
+binder 6205:6205 <> i:129
+binder 6207:6207 <> l:130
+binder 6209:6209 <> n:131
+binder 6211:6211 <> m:132
+binder 6213:6213 <> f:133
+R6251:6270 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6242:6244 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6231:6239 DisQ.DisQKind <> simp_aexp def
+R6241:6241 DisQ.DisQSem <> a:126 var
+R6245:6248 Coq.Init.Datatypes <> Some constr
+R6250:6250 DisQ.DisQSem <> y:127 var
+R6271:6279 DisQ.DisQSem <> eval_bexp:112 ind
+R6497:6498 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6422:6422 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6466:6466 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6496:6496 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6440:6441 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6423:6423 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6425:6425 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6432:6432 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6439:6439 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6424:6424 DisQ.DisQSem <> x:125 var
+R6426:6429 DisQ.DisQSyntax <> BNum constr
+R6433:6436 DisQ.DisQSyntax <> BNum constr
+R6438:6438 DisQ.DisQSem <> n:131 var
+R6463:6464 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6442:6442 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6444:6444 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6451:6451 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6462:6462 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6443:6443 DisQ.DisQSem <> z:128 var
+R6445:6448 DisQ.DisQSyntax <> BNum constr
+R6450:6450 DisQ.DisQSem <> i:129 var
+R6452:6455 DisQ.DisQSyntax <> BNum constr
+R6458:6458 Coq.Init.Datatypes <> S constr
+R6460:6460 DisQ.DisQSem <> i:129 var
+R6465:6465 DisQ.DisQSem <> l:130 var
+R6467:6470 DisQ.DisQDef <> Cval constr
+R6472:6472 DisQ.DisQSem <> m:132 var
+R6475:6486 DisQ.DisQSem <> eval_eq_bool def
+R6488:6488 DisQ.DisQSem <> f:133 var
+R6490:6490 DisQ.DisQSem <> m:132 var
+R6492:6492 DisQ.DisQSem <> n:131 var
+R6494:6494 DisQ.DisQSem <> y:127 var
+R6499:6499 DisQ.DisQSem <> s:124 var
+R6367:6369 DisQ.DisQSyntax <> BEq constr
+R6372:6372 DisQ.DisQSem <> a:126 var
+R6376:6377 DisQ.DisQSyntax <> BA constr
+R6379:6379 DisQ.DisQSem <> x:125 var
+R6382:6382 DisQ.DisQSem <> z:128 var
+R6385:6387 DisQ.DisQSyntax <> Num constr
+R6389:6389 DisQ.DisQSem <> i:129 var
+R6336:6337 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6282:6282 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6326:6326 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6335:6335 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6300:6301 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6283:6283 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6285:6285 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6292:6292 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6299:6299 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6284:6284 DisQ.DisQSem <> x:125 var
+R6286:6289 DisQ.DisQSyntax <> BNum constr
+R6293:6296 DisQ.DisQSyntax <> BNum constr
+R6298:6298 DisQ.DisQSem <> n:131 var
+R6323:6324 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6302:6302 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6304:6304 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6311:6311 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6322:6322 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6303:6303 DisQ.DisQSem <> z:128 var
+R6305:6308 DisQ.DisQSyntax <> BNum constr
+R6310:6310 DisQ.DisQSem <> i:129 var
+R6312:6315 DisQ.DisQSyntax <> BNum constr
+R6318:6318 Coq.Init.Datatypes <> S constr
+R6320:6320 DisQ.DisQSem <> i:129 var
+R6325:6325 DisQ.DisQSem <> l:130 var
+R6327:6330 DisQ.DisQDef <> Cval constr
+R6332:6332 DisQ.DisQSem <> m:132 var
+R6334:6334 DisQ.DisQSem <> f:133 var
+R6338:6338 DisQ.DisQSem <> s:124 var
+binder 6527:6527 <> s:134
+binder 6529:6529 <> x:135
+binder 6531:6531 <> a:136
+binder 6533:6533 <> y:137
+binder 6535:6535 <> z:138
+binder 6537:6537 <> i:139
+binder 6539:6539 <> l:140
+binder 6541:6541 <> n:141
+binder 6543:6543 <> m:142
+binder 6545:6545 <> f:143
+R6584:6603 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6575:6577 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6564:6572 DisQ.DisQKind <> simp_aexp def
+R6574:6574 DisQ.DisQSem <> a:136 var
+R6578:6581 Coq.Init.Datatypes <> Some constr
+R6583:6583 DisQ.DisQSem <> y:137 var
+R6604:6612 DisQ.DisQSem <> eval_bexp:112 ind
+R6832:6833 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6753:6754 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6798:6800 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6830:6831 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6772:6773 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6755:6755 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6757:6757 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6764:6764 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6771:6771 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6756:6756 DisQ.DisQSem <> x:135 var
+R6758:6761 DisQ.DisQSyntax <> BNum constr
+R6765:6768 DisQ.DisQSyntax <> BNum constr
+R6770:6770 DisQ.DisQSem <> n:141 var
+R6795:6796 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6774:6774 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6776:6776 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6783:6783 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6794:6794 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6775:6775 DisQ.DisQSem <> z:138 var
+R6777:6780 DisQ.DisQSyntax <> BNum constr
+R6782:6782 DisQ.DisQSem <> i:139 var
+R6784:6787 DisQ.DisQSyntax <> BNum constr
+R6790:6790 Coq.Init.Datatypes <> S constr
+R6792:6792 DisQ.DisQSem <> i:139 var
+R6797:6797 DisQ.DisQSem <> l:140 var
+R6801:6804 DisQ.DisQDef <> Cval constr
+R6806:6806 DisQ.DisQSem <> m:142 var
+R6809:6820 DisQ.DisQSem <> eval_lt_bool def
+R6822:6822 DisQ.DisQSem <> f:143 var
+R6824:6824 DisQ.DisQSem <> m:142 var
+R6826:6826 DisQ.DisQSem <> n:141 var
+R6828:6828 DisQ.DisQSem <> y:137 var
+R6834:6834 DisQ.DisQSem <> s:134 var
+R6700:6702 DisQ.DisQSyntax <> BLt constr
+R6705:6706 DisQ.DisQSyntax <> BA constr
+R6708:6708 DisQ.DisQSem <> x:135 var
+R6712:6712 DisQ.DisQSem <> a:136 var
+R6715:6715 DisQ.DisQSem <> z:138 var
+R6718:6720 DisQ.DisQSyntax <> Num constr
+R6722:6722 DisQ.DisQSem <> i:139 var
+R6671:6672 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6615:6616 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6660:6661 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6670:6670 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6634:6635 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6617:6617 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6619:6619 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6626:6626 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6633:6633 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6618:6618 DisQ.DisQSem <> x:135 var
+R6620:6623 DisQ.DisQSyntax <> BNum constr
+R6627:6630 DisQ.DisQSyntax <> BNum constr
+R6632:6632 DisQ.DisQSem <> n:141 var
+R6657:6658 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6636:6636 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6638:6638 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6645:6645 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6656:6656 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6637:6637 DisQ.DisQSem <> z:138 var
+R6639:6642 DisQ.DisQSyntax <> BNum constr
+R6644:6644 DisQ.DisQSem <> i:139 var
+R6646:6649 DisQ.DisQSyntax <> BNum constr
+R6652:6652 Coq.Init.Datatypes <> S constr
+R6654:6654 DisQ.DisQSem <> i:139 var
+R6659:6659 DisQ.DisQSem <> l:140 var
+R6662:6665 DisQ.DisQDef <> Cval constr
+R6667:6667 DisQ.DisQSem <> m:142 var
+R6669:6669 DisQ.DisQSem <> f:143 var
+R6673:6673 DisQ.DisQSem <> s:134 var
+binder 6863:6863 <> s:144
+binder 6865:6865 <> x:145
+binder 6867:6867 <> a:146
+binder 6869:6869 <> y:147
+binder 6871:6871 <> z:148
+binder 6873:6873 <> i:149
+binder 6875:6875 <> l:150
+binder 6877:6877 <> n:151
+binder 6879:6879 <> m:152
+binder 6881:6881 <> f:153
+R6920:6940 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6911:6913 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6900:6908 DisQ.DisQKind <> simp_aexp def
+R6910:6910 DisQ.DisQSem <> a:146 var
+R6914:6917 Coq.Init.Datatypes <> Some constr
+R6919:6919 DisQ.DisQSem <> y:147 var
+R6941:6949 DisQ.DisQSem <> eval_bexp:112 ind
+R7168:7169 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R7088:7089 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7133:7135 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7166:7167 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7107:7108 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R7090:7090 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7092:7092 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7099:7099 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7106:7106 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7091:7091 DisQ.DisQSem <> x:145 var
+R7093:7096 DisQ.DisQSyntax <> BNum constr
+R7100:7103 DisQ.DisQSyntax <> BNum constr
+R7105:7105 DisQ.DisQSem <> n:151 var
+R7130:7131 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R7109:7109 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7111:7111 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7118:7118 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7129:7129 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7110:7110 DisQ.DisQSem <> z:148 var
+R7112:7115 DisQ.DisQSyntax <> BNum constr
+R7117:7117 DisQ.DisQSem <> i:149 var
+R7119:7122 DisQ.DisQSyntax <> BNum constr
+R7125:7125 Coq.Init.Datatypes <> S constr
+R7127:7127 DisQ.DisQSem <> i:149 var
+R7132:7132 DisQ.DisQSem <> l:150 var
+R7136:7139 DisQ.DisQDef <> Cval constr
+R7141:7141 DisQ.DisQSem <> m:152 var
+R7144:7156 DisQ.DisQSem <> eval_rlt_bool def
+R7158:7158 DisQ.DisQSem <> f:153 var
+R7160:7160 DisQ.DisQSem <> m:152 var
+R7162:7162 DisQ.DisQSem <> n:151 var
+R7164:7164 DisQ.DisQSem <> y:147 var
+R7170:7170 DisQ.DisQSem <> s:144 var
+R7038:7040 DisQ.DisQSyntax <> BLt constr
+R7043:7043 DisQ.DisQSem <> a:146 var
+R7047:7048 DisQ.DisQSyntax <> BA constr
+R7050:7050 DisQ.DisQSem <> x:145 var
+R7053:7053 DisQ.DisQSem <> z:148 var
+R7056:7058 DisQ.DisQSyntax <> Num constr
+R7060:7060 DisQ.DisQSem <> i:149 var
+R7008:7009 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6952:6953 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6997:6998 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7007:7007 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6971:6972 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6954:6954 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6956:6956 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6963:6963 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6970:6970 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6955:6955 DisQ.DisQSem <> x:145 var
+R6957:6960 DisQ.DisQSyntax <> BNum constr
+R6964:6967 DisQ.DisQSyntax <> BNum constr
+R6969:6969 DisQ.DisQSem <> n:151 var
+R6994:6995 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6973:6973 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6975:6975 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6982:6982 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6993:6993 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6974:6974 DisQ.DisQSem <> z:148 var
+R6976:6979 DisQ.DisQSyntax <> BNum constr
+R6981:6981 DisQ.DisQSem <> i:149 var
+R6983:6986 DisQ.DisQSyntax <> BNum constr
+R6989:6989 Coq.Init.Datatypes <> S constr
+R6991:6991 DisQ.DisQSem <> i:149 var
+R6996:6996 DisQ.DisQSem <> l:150 var
+R6999:7002 DisQ.DisQDef <> Cval constr
+R7004:7004 DisQ.DisQSem <> m:152 var
+R7006:7006 DisQ.DisQSem <> f:153 var
+R7010:7010 DisQ.DisQSem <> s:144 var
+ind 7185:7200 <> find_basis_elems
+constr 7306:7321 <> find_basis_empty
+constr 7383:7399 <> find_basis_many_1
+constr 7587:7603 <> find_basis_many_2
+R7208:7210 Coq.Init.Datatypes <> nat ind
+binder 7203:7203 <> n:154
+binder 7205:7206 <> n':155
+R7216:7221 DisQ.BasicUtility <> rz_val def
+binder 7214:7214 <> f:156
+R7231:7234 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7228:7230 Coq.Init.Datatypes <> nat ind
+R7236:7236 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R7235:7235 QuantumLib.Complex <> C def
+R7237:7242 DisQ.BasicUtility <> rz_val def
+binder 7225:7226 <> fc:157
+R7262:7265 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7259:7261 Coq.Init.Datatypes <> nat ind
+R7269:7272 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7266:7268 Coq.Init.Datatypes <> nat ind
+R7273:7273 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7291:7295 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7277:7280 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7274:7276 Coq.Init.Datatypes <> nat ind
+R7282:7284 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R7281:7281 QuantumLib.Complex <> C def
+R7285:7290 DisQ.BasicUtility <> rz_val def
+R7324:7339 DisQ.DisQSem <> find_basis_elems:158 ind
+R7365:7365 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7368:7368 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7377:7377 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7366:7367 QuantumLib.Complex <> C0 abbrev
+R7369:7376 DisQ.MathSpec <> allfalse def
+R7348:7349 DisQ.DisQSem <> fc:157 var
+R7346:7346 DisQ.DisQSem <> f:156 var
+R7343:7344 DisQ.DisQSem <> n':155 var
+R7341:7341 DisQ.DisQSem <> n:154 var
+binder 7409:7409 <> i:160
+binder 7411:7411 <> m:161
+binder 7413:7415 <> acc:162
+R7452:7468 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7418:7433 DisQ.DisQSem <> find_basis_elems:158 ind
+R7449:7451 DisQ.DisQSem <> acc:162 var
+R7447:7447 DisQ.DisQSem <> m:161 var
+R7445:7445 DisQ.DisQSem <> i:160 var
+R7442:7443 DisQ.DisQSem <> fc:157 var
+R7440:7440 DisQ.DisQSem <> f:156 var
+R7437:7438 DisQ.DisQSem <> n':155 var
+R7435:7435 DisQ.DisQSem <> n:154 var
+R7509:7522 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7470:7472 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7469:7469 DisQ.DisQSem <> f:156 var
+R7473:7477 DisQ.MathSpec <> cut_n def
+R7480:7489 DisQ.DisQDef <> lshift_fun def
+R7504:7505 DisQ.DisQSem <> n':155 var
+R7492:7494 Coq.Init.Datatypes <> snd def
+R7497:7498 DisQ.DisQSem <> fc:157 var
+R7500:7500 DisQ.DisQSem <> i:160 var
+R7508:7508 DisQ.DisQSem <> n:154 var
+R7523:7538 DisQ.DisQSem <> find_basis_elems:158 ind
+R7563:7568 QuantumLib.Bits <> update def
+R7577:7578 DisQ.DisQSem <> fc:157 var
+R7580:7580 DisQ.DisQSem <> i:160 var
+R7574:7574 DisQ.DisQSem <> m:161 var
+R7570:7572 DisQ.DisQSem <> acc:162 var
+R7557:7557 Coq.Init.Datatypes <> S constr
+R7559:7559 DisQ.DisQSem <> m:161 var
+R7551:7551 Coq.Init.Datatypes <> S constr
+R7553:7553 DisQ.DisQSem <> i:160 var
+R7547:7548 DisQ.DisQSem <> fc:157 var
+R7545:7545 DisQ.DisQSem <> f:156 var
+R7542:7543 DisQ.DisQSem <> n':155 var
+R7540:7540 DisQ.DisQSem <> n:154 var
+binder 7613:7613 <> i:163
+binder 7615:7615 <> m:164
+binder 7617:7619 <> acc:165
+R7656:7672 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7622:7637 DisQ.DisQSem <> find_basis_elems:158 ind
+R7653:7655 DisQ.DisQSem <> acc:165 var
+R7651:7651 DisQ.DisQSem <> m:164 var
+R7649:7649 DisQ.DisQSem <> i:163 var
+R7646:7647 DisQ.DisQSem <> fc:157 var
+R7644:7644 DisQ.DisQSem <> f:156 var
+R7641:7642 DisQ.DisQSem <> n':155 var
+R7639:7639 DisQ.DisQSem <> n:154 var
+R7714:7717 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7674:7677 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R7673:7673 DisQ.DisQSem <> f:156 var
+R7678:7682 DisQ.MathSpec <> cut_n def
+R7685:7694 DisQ.DisQDef <> lshift_fun def
+R7709:7710 DisQ.DisQSem <> n':155 var
+R7697:7699 Coq.Init.Datatypes <> snd def
+R7702:7703 DisQ.DisQSem <> fc:157 var
+R7705:7705 DisQ.DisQSem <> i:163 var
+R7713:7713 DisQ.DisQSem <> n:154 var
+R7718:7733 DisQ.DisQSem <> find_basis_elems:158 ind
+R7753:7755 DisQ.DisQSem <> acc:165 var
+R7751:7751 DisQ.DisQSem <> m:164 var
+R7746:7746 Coq.Init.Datatypes <> S constr
+R7748:7748 DisQ.DisQSem <> i:163 var
+R7742:7743 DisQ.DisQSem <> fc:157 var
+R7740:7740 DisQ.DisQSem <> f:156 var
+R7737:7738 DisQ.DisQSem <> n':155 var
+R7735:7735 DisQ.DisQSem <> n:154 var
+ind 7769:7778 <> assem_elem
+constr 7852:7863 <> assem_elem_0
+constr 7914:7926 <> assem_elem_st
+constr 8062:8074 <> assem_elem_sf
+R7785:7788 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7782:7784 Coq.Init.Datatypes <> nat ind
+R7792:7795 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7789:7791 Coq.Init.Datatypes <> nat ind
+R7802:7805 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7796:7801 DisQ.BasicUtility <> rz_val def
+R7806:7806 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7823:7827 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7810:7812 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7807:7809 Coq.Init.Datatypes <> nat ind
+R7814:7816 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R7813:7813 QuantumLib.Complex <> C def
+R7817:7822 DisQ.BasicUtility <> rz_val def
+R7836:7839 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7828:7831 Coq.Init.Datatypes <> list ind
+R7833:7835 Coq.Init.Datatypes <> nat ind
+binder 7874:7877 <> size:168
+binder 7879:7879 <> c:169
+binder 7881:7881 <> f:170
+R7884:7893 DisQ.DisQSem <> assem_elem:166 ind
+R7906:7908 Coq.Init.Datatypes <> nil constr
+R7904:7904 DisQ.DisQSem <> f:170 var
+R7902:7902 DisQ.DisQSem <> c:169 var
+R7897:7900 DisQ.DisQSem <> size:168 var
+binder 7937:7940 <> size:171
+binder 7942:7942 <> c:172
+binder 7944:7944 <> f:173
+binder 7946:7946 <> m:174
+binder 7948:7948 <> l:175
+R7974:7977 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7951:7960 DisQ.DisQSem <> assem_elem:166 ind
+R7973:7973 DisQ.DisQSem <> l:175 var
+R7971:7971 DisQ.DisQSem <> f:173 var
+R7969:7969 DisQ.DisQSem <> c:172 var
+R7964:7967 DisQ.DisQSem <> size:171 var
+R7962:7962 DisQ.DisQSem <> m:174 var
+R8004:8024 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8000:8002 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7978:7982 DisQ.MathSpec <> cut_n def
+R7985:7987 Coq.Init.Datatypes <> snd def
+R7990:7990 DisQ.DisQSem <> f:173 var
+R7992:7992 DisQ.DisQSem <> m:174 var
+R7996:7999 DisQ.DisQSem <> size:171 var
+R8003:8003 DisQ.DisQSem <> c:172 var
+R8025:8034 DisQ.DisQSem <> assem_elem:166 ind
+R8053:8054 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R8052:8052 DisQ.DisQSem <> m:174 var
+R8055:8055 DisQ.DisQSem <> l:175 var
+R8049:8049 DisQ.DisQSem <> f:173 var
+R8047:8047 DisQ.DisQSem <> c:172 var
+R8042:8045 DisQ.DisQSem <> size:171 var
+R8037:8037 Coq.Init.Datatypes <> S constr
+R8039:8039 DisQ.DisQSem <> m:174 var
+binder 8085:8088 <> size:176
+binder 8090:8090 <> c:177
+binder 8092:8092 <> f:178
+binder 8094:8094 <> m:179
+binder 8096:8096 <> l:180
+R8122:8125 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8099:8108 DisQ.DisQSem <> assem_elem:166 ind
+R8121:8121 DisQ.DisQSem <> l:180 var
+R8119:8119 DisQ.DisQSem <> f:178 var
+R8117:8117 DisQ.DisQSem <> c:177 var
+R8112:8115 DisQ.DisQSem <> size:176 var
+R8110:8110 DisQ.DisQSem <> m:179 var
+R8153:8173 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8148:8151 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R8126:8130 DisQ.MathSpec <> cut_n def
+R8133:8135 Coq.Init.Datatypes <> snd def
+R8138:8138 DisQ.DisQSem <> f:178 var
+R8140:8140 DisQ.DisQSem <> m:179 var
+R8144:8147 DisQ.DisQSem <> size:176 var
+R8152:8152 DisQ.DisQSem <> c:177 var
+R8174:8183 DisQ.DisQSem <> assem_elem:166 ind
+R8200:8200 DisQ.DisQSem <> l:180 var
+R8198:8198 DisQ.DisQSem <> f:178 var
+R8196:8196 DisQ.DisQSem <> c:177 var
+R8191:8194 DisQ.DisQSem <> size:176 var
+R8186:8186 Coq.Init.Datatypes <> S constr
+R8188:8188 DisQ.DisQSem <> m:179 var
+def 8215:8225 <> combine_two
+R8230:8232 Coq.Init.Datatypes <> nat ind
+binder 8228:8228 <> n:181
+R8238:8243 DisQ.BasicUtility <> rz_val def
+binder 8236:8236 <> f:182
+R8249:8254 DisQ.BasicUtility <> rz_val def
+binder 8247:8247 <> g:183
+binder 8269:8269 <> x:184
+R8278:8281 Coq.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R8277:8277 DisQ.DisQSem <> x:184 var
+R8282:8282 DisQ.DisQSem <> n:181 var
+R8298:8298 DisQ.DisQSem <> g:183 var
+R8302:8302 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R8301:8301 DisQ.DisQSem <> x:184 var
+R8303:8303 DisQ.DisQSem <> n:181 var
+R8289:8289 DisQ.DisQSem <> f:182 var
+R8291:8291 DisQ.DisQSem <> x:184 var
+def 8318:8327 <> assem_list
+R8339:8341 Coq.Init.Datatypes <> nat ind
+binder 8330:8330 <> m:185
+binder 8332:8335 <> base:186
+binder 8337:8337 <> n:187
+R8347:8352 DisQ.BasicUtility <> rz_val def
+binder 8345:8345 <> f:188
+R8363:8366 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8360:8362 Coq.Init.Datatypes <> nat ind
+R8368:8370 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R8367:8367 QuantumLib.Complex <> C def
+R8371:8376 DisQ.BasicUtility <> rz_val def
+binder 8356:8357 <> fc:189
+R8387:8390 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8384:8386 Coq.Init.Datatypes <> nat ind
+R8392:8392 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R8391:8391 QuantumLib.Complex <> C def
+R8393:8398 DisQ.BasicUtility <> rz_val def
+binder 8380:8382 <> acc:190
+R8414:8414 DisQ.DisQSem <> m:185 var
+R8426:8426 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8431:8432 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8436:8436 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8427:8430 DisQ.DisQSem <> base:186 var
+R8433:8435 DisQ.DisQSem <> acc:190 var
+R8455:8455 Coq.Init.Datatypes <> S constr
+R8469:8478 DisQ.DisQSem <> assem_list:191 def
+R8495:8497 DisQ.DisQSem <> acc:190 var
+R8492:8493 DisQ.DisQSem <> fc:189 var
+R8490:8490 DisQ.DisQSem <> f:188 var
+R8488:8488 DisQ.DisQSem <> n:187 var
+R8483:8486 DisQ.DisQSem <> base:186 var
+R8504:8504 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8507:8508 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8511:8511 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8544:8544 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8549:8551 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8609:8610 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8545:8545 Coq.Init.Datatypes <> S constr
+R8552:8557 QuantumLib.Bits <> update def
+R8565:8565 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8577:8578 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8608:8608 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8566:8568 Coq.Init.Datatypes <> fst def
+R8571:8572 DisQ.DisQSem <> fc:189 var
+R8579:8589 DisQ.DisQSem <> combine_two def
+R8591:8591 DisQ.DisQSem <> n:187 var
+R8593:8593 DisQ.DisQSem <> f:188 var
+R8596:8598 Coq.Init.Datatypes <> snd def
+R8601:8602 DisQ.DisQSem <> fc:189 var
+ind 8742:8751 <> assem_bool
+constr 8834:8849 <> assem_bool_empty
+constr 8926:8942 <> assem_bool_many_1
+constr 9177:9193 <> assem_bool_many_2
+R8759:8761 Coq.Init.Datatypes <> nat ind
+binder 8754:8754 <> n:193
+binder 8756:8757 <> n':194
+R8768:8771 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8765:8767 Coq.Init.Datatypes <> nat ind
+R8772:8772 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8789:8793 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8776:8778 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8773:8775 Coq.Init.Datatypes <> nat ind
+R8780:8782 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R8779:8779 QuantumLib.Complex <> C def
+R8783:8788 DisQ.BasicUtility <> rz_val def
+R8804:8807 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8794:8803 DisQ.DisQDef <> state_elem ind
+R8818:8821 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8808:8817 DisQ.DisQDef <> state_elem ind
+binder 8859:8859 <> f:197
+binder 8861:8862 <> fc:198
+R8865:8874 DisQ.DisQSem <> assem_bool:195 ind
+R8889:8892 DisQ.DisQDef <> Cval constr
+R8906:8906 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8909:8909 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8918:8918 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8907:8908 QuantumLib.Complex <> C0 abbrev
+R8910:8917 DisQ.MathSpec <> allfalse def
+R8885:8886 DisQ.DisQSem <> fc:198 var
+R8883:8883 DisQ.DisQSem <> f:197 var
+R8878:8879 DisQ.DisQSem <> n':194 var
+R8876:8876 DisQ.DisQSem <> n:193 var
+binder 8952:8952 <> i:199
+binder 8954:8954 <> m:200
+binder 8956:8957 <> m':201
+binder 8959:8959 <> f:202
+binder 8961:8962 <> fc:203
+binder 8964:8966 <> acc:204
+binder 8968:8969 <> fv:205
+R9017:9028 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8972:8981 DisQ.DisQSem <> assem_bool:195 ind
+R9005:9008 DisQ.DisQDef <> Cval constr
+R9010:9011 DisQ.DisQSem <> m':201 var
+R9013:9015 DisQ.DisQSem <> acc:204 var
+R8993:8996 DisQ.DisQDef <> Cval constr
+R8998:8998 DisQ.DisQSem <> m:200 var
+R9000:9001 DisQ.DisQSem <> fc:203 var
+R8990:8990 DisQ.DisQSem <> f:202 var
+R8988:8988 DisQ.DisQSem <> i:199 var
+R8985:8986 DisQ.DisQSem <> n':194 var
+R8983:8983 DisQ.DisQSem <> n:193 var
+R9082:9100 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9029:9044 DisQ.DisQSem <> find_basis_elems ind
+R9046:9046 DisQ.DisQSem <> n:193 var
+R9048:9049 DisQ.DisQSem <> n':194 var
+R9052:9056 DisQ.MathSpec <> cut_n def
+R9059:9061 Coq.Init.Datatypes <> snd def
+R9064:9064 DisQ.DisQSem <> f:202 var
+R9066:9066 DisQ.DisQSem <> i:199 var
+R9070:9070 DisQ.DisQSem <> n:193 var
+R9073:9074 DisQ.DisQSem <> fc:203 var
+R9076:9076 DisQ.DisQSem <> m:200 var
+R9080:9081 DisQ.DisQSem <> fv:205 var
+R9101:9110 DisQ.DisQSem <> assem_bool:195 ind
+R9138:9141 DisQ.DisQDef <> Cval constr
+R9144:9144 Coq.Init.Datatypes <> S constr
+R9146:9147 DisQ.DisQSem <> m':201 var
+R9151:9156 QuantumLib.Bits <> update def
+R9166:9166 DisQ.DisQSem <> f:202 var
+R9168:9168 DisQ.DisQSem <> i:199 var
+R9162:9163 DisQ.DisQSem <> m':201 var
+R9158:9160 DisQ.DisQSem <> acc:204 var
+R9126:9129 DisQ.DisQDef <> Cval constr
+R9131:9131 DisQ.DisQSem <> m:200 var
+R9133:9134 DisQ.DisQSem <> fc:203 var
+R9123:9123 DisQ.DisQSem <> f:202 var
+R9118:9118 Coq.Init.Datatypes <> S constr
+R9120:9120 DisQ.DisQSem <> i:199 var
+R9114:9115 DisQ.DisQSem <> n':194 var
+R9112:9112 DisQ.DisQSem <> n:193 var
+binder 9203:9203 <> i:206
+binder 9205:9205 <> m:207
+binder 9207:9208 <> m':208
+binder 9210:9210 <> f:209
+binder 9212:9213 <> fc:210
+binder 9215:9217 <> acc:211
+binder 9219:9220 <> mv:212
+binder 9222:9223 <> fv:213
+binder 9225:9226 <> ma:214
+binder 9228:9229 <> fa:215
+R9277:9288 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9232:9241 DisQ.DisQSem <> assem_bool:195 ind
+R9265:9268 DisQ.DisQDef <> Cval constr
+R9270:9271 DisQ.DisQSem <> m':208 var
+R9273:9275 DisQ.DisQSem <> acc:211 var
+R9253:9256 DisQ.DisQDef <> Cval constr
+R9258:9258 DisQ.DisQSem <> m:207 var
+R9260:9261 DisQ.DisQSem <> fc:210 var
+R9250:9250 DisQ.DisQSem <> f:209 var
+R9248:9248 DisQ.DisQSem <> i:206 var
+R9245:9246 DisQ.DisQSem <> n':194 var
+R9243:9243 DisQ.DisQSem <> n:193 var
+R9295:9298 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9290:9292 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R9293:9294 DisQ.DisQSem <> mv:212 var
+R9353:9364 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9299:9314 DisQ.DisQSem <> find_basis_elems ind
+R9316:9316 DisQ.DisQSem <> n:193 var
+R9318:9319 DisQ.DisQSem <> n':194 var
+R9322:9326 DisQ.MathSpec <> cut_n def
+R9329:9331 Coq.Init.Datatypes <> snd def
+R9334:9334 DisQ.DisQSem <> f:209 var
+R9336:9336 DisQ.DisQSem <> i:206 var
+R9340:9340 DisQ.DisQSem <> n:193 var
+R9343:9344 DisQ.DisQSem <> fc:210 var
+R9346:9346 DisQ.DisQSem <> m:207 var
+R9348:9349 DisQ.DisQSem <> mv:212 var
+R9351:9352 DisQ.DisQSem <> fv:213 var
+R9423:9442 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9412:9414 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9365:9374 DisQ.DisQSem <> assem_list def
+R9376:9377 DisQ.DisQSem <> mv:212 var
+R9379:9380 DisQ.DisQSem <> m':208 var
+R9382:9382 DisQ.DisQSem <> n:193 var
+R9385:9389 DisQ.MathSpec <> cut_n def
+R9392:9394 Coq.Init.Datatypes <> snd def
+R9397:9397 DisQ.DisQSem <> f:209 var
+R9399:9399 DisQ.DisQSem <> i:206 var
+R9403:9403 DisQ.DisQSem <> n:193 var
+R9406:9407 DisQ.DisQSem <> fv:213 var
+R9409:9411 DisQ.DisQSem <> acc:211 var
+R9415:9415 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9418:9419 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9422:9422 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9416:9417 DisQ.DisQSem <> ma:214 var
+R9420:9421 DisQ.DisQSem <> fa:215 var
+R9443:9452 DisQ.DisQSem <> assem_bool:195 ind
+R9480:9483 DisQ.DisQDef <> Cval constr
+R9485:9486 DisQ.DisQSem <> ma:214 var
+R9488:9489 DisQ.DisQSem <> fa:215 var
+R9468:9471 DisQ.DisQDef <> Cval constr
+R9473:9473 DisQ.DisQSem <> m:207 var
+R9475:9476 DisQ.DisQSem <> fc:210 var
+R9465:9465 DisQ.DisQSem <> f:209 var
+R9460:9460 Coq.Init.Datatypes <> S constr
+R9462:9462 DisQ.DisQSem <> i:206 var
+R9456:9457 DisQ.DisQSem <> n':194 var
+R9454:9454 DisQ.DisQSem <> n:193 var
+def 9503:9514 <> subst_qstate
+R9519:9524 DisQ.DisQDef <> qstate def
+binder 9517:9517 <> l:216
+R9530:9532 DisQ.BasicUtility <> var def
+binder 9528:9528 <> x:217
+R9538:9540 Coq.Init.Datatypes <> nat ind
+binder 9536:9536 <> n:218
+R9554:9554 DisQ.DisQSem <> l:216 var
+R9561:9563 Coq.Init.Datatypes <> nil constr
+R9568:9570 Coq.Init.Datatypes <> nil constr
+R9589:9590 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R9584:9584 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9586:9586 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9588:9588 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9618:9620 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R9640:9640 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R9597:9597 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9615:9615 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9617:9617 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9598:9608 DisQ.DisQDef <> subst_locus def
+R9612:9612 DisQ.DisQSem <> x:217 var
+R9614:9614 DisQ.DisQSem <> n:218 var
+R9621:9632 DisQ.DisQSem <> subst_qstate:219 def
+R9639:9639 DisQ.DisQSem <> n:218 var
+R9637:9637 DisQ.DisQSem <> x:217 var
+def 9660:9670 <> subst_state
+R9675:9679 DisQ.DisQDef <> state def
+binder 9673:9673 <> l:221
+R9685:9687 DisQ.BasicUtility <> var def
+binder 9683:9683 <> x:222
+binder 9690:9690 <> n:223
+R9695:9695 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9701:9701 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9726:9726 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9696:9698 Coq.Init.Datatypes <> fst def
+R9700:9700 DisQ.DisQSem <> l:221 var
+R9702:9713 DisQ.DisQSem <> subst_qstate def
+R9716:9718 Coq.Init.Datatypes <> snd def
+R9720:9720 DisQ.DisQSem <> l:221 var
+R9723:9723 DisQ.DisQSem <> x:222 var
+R9725:9725 DisQ.DisQSem <> n:223 var
+def 9741:9748 <> loc_memb
+R9754:9757 DisQ.DisQSyntax <> memb ind
+binder 9751:9751 <> m:224
+R9771:9771 DisQ.DisQSem <> m:224 var
+R9778:9781 DisQ.DisQSyntax <> Memb constr
+R9805:9812 DisQ.DisQSyntax <> LockMemb constr
+def 9845:9851 <> alltrue
+R9863:9865 Coq.Init.Datatypes <> nat ind
+R9871:9874 Coq.Init.Datatypes <> true constr
+ind 10050:10055 <> p_step
+constr 10154:10163 <> self_pstep
+constr 10226:10235 <> if_pstep_t
+constr 10334:10343 <> if_pstep_f
+constr 10443:10450 <> op_pstep
+constr 10638:10646 <> mea_pstep
+constr 11028:11036 <> new_pstep
+R10063:10065 Coq.Init.Datatypes <> nat ind
+binder 10058:10061 <> rmax:226
+R10076:10079 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10072:10075 DisQ.DisQDef <> aenv def
+R10086:10089 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10080:10085 DisQ.DisQDef <> qstate def
+R10097:10100 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10090:10096 DisQ.DisQSyntax <> process ind
+R10101:10101 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10116:10120 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10103:10105 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R10102:10102 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R10106:10111 Coq.Init.Datatypes <> option ind
+R10113:10115 Coq.Init.Datatypes <> nat ind
+R10127:10130 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10121:10126 DisQ.DisQDef <> qstate def
+R10138:10141 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10131:10137 DisQ.DisQSyntax <> process ind
+binder 10174:10177 <> aenv:229
+binder 10179:10179 <> s:230
+R10182:10187 DisQ.DisQSem <> p_step:227 ind
+R10215:10218 DisQ.DisQSyntax <> PNil constr
+R10213:10213 DisQ.DisQSem <> s:230 var
+R10201:10201 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10205:10206 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10211:10211 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10207:10210 Coq.Init.Datatypes <> None constr
+R10196:10199 DisQ.DisQSyntax <> PNil constr
+R10194:10194 DisQ.DisQSem <> s:230 var
+R10189:10192 DisQ.DisQSem <> aenv:229 var
+binder 10246:10249 <> aenv:231
+binder 10251:10251 <> s:232
+binder 10253:10253 <> b:233
+binder 10255:10255 <> P:234
+binder 10257:10257 <> Q:235
+R10284:10287 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10272:10274 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10260:10269 DisQ.DisQKind <> simp_cbexp def
+R10271:10271 DisQ.DisQSem <> b:233 var
+R10275:10278 Coq.Init.Datatypes <> Some constr
+R10280:10283 Coq.Init.Datatypes <> true constr
+R10288:10293 DisQ.DisQSem <> p_step:227 ind
+R10328:10328 DisQ.DisQSem <> P:234 var
+R10326:10326 DisQ.DisQSem <> s:232 var
+R10314:10314 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10318:10319 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10324:10324 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10320:10323 Coq.Init.Datatypes <> None constr
+R10303:10305 DisQ.DisQSyntax <> PIf constr
+R10307:10307 DisQ.DisQSem <> b:233 var
+R10309:10309 DisQ.DisQSem <> P:234 var
+R10311:10311 DisQ.DisQSem <> Q:235 var
+R10300:10300 DisQ.DisQSem <> s:232 var
+R10295:10298 DisQ.DisQSem <> aenv:231 var
+binder 10354:10357 <> aenv:236
+binder 10359:10359 <> s:237
+binder 10361:10361 <> b:238
+binder 10363:10363 <> P:239
+binder 10365:10365 <> Q:240
+R10393:10396 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10380:10382 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10368:10377 DisQ.DisQKind <> simp_cbexp def
+R10379:10379 DisQ.DisQSem <> b:238 var
+R10383:10386 Coq.Init.Datatypes <> Some constr
+R10388:10392 Coq.Init.Datatypes <> false constr
+R10397:10402 DisQ.DisQSem <> p_step:227 ind
+R10437:10437 DisQ.DisQSem <> Q:240 var
+R10435:10435 DisQ.DisQSem <> s:237 var
+R10423:10423 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10427:10428 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10433:10433 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10429:10432 Coq.Init.Datatypes <> None constr
+R10412:10414 DisQ.DisQSyntax <> PIf constr
+R10416:10416 DisQ.DisQSem <> b:238 var
+R10418:10418 DisQ.DisQSem <> P:239 var
+R10420:10420 DisQ.DisQSem <> Q:240 var
+R10409:10409 DisQ.DisQSem <> s:237 var
+R10404:10407 DisQ.DisQSem <> aenv:236 var
+binder 10463:10466 <> aenv:241
+binder 10468:10468 <> s:242
+binder 10470:10470 <> a:243
+binder 10472:10472 <> l:244
+binder 10474:10474 <> m:245
+binder 10476:10476 <> b:246
+binder 10478:10478 <> e:247
+binder 10480:10481 <> ba:248
+binder 10483:10483 <> Q:249
+R10521:10543 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10511:10513 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10486:10492 DisQ.DisQSem <> eval_ch def
+R10494:10497 DisQ.DisQSem <> rmax:226 var
+R10499:10502 DisQ.DisQSem <> aenv:241 var
+R10504:10504 DisQ.DisQSem <> a:243 var
+R10506:10506 DisQ.DisQSem <> m:245 var
+R10508:10508 DisQ.DisQSem <> b:246 var
+R10510:10510 DisQ.DisQSem <> e:247 var
+R10514:10517 Coq.Init.Datatypes <> Some constr
+R10519:10520 DisQ.DisQSem <> ba:248 var
+R10544:10549 DisQ.DisQSem <> p_step:227 ind
+R10632:10632 DisQ.DisQSem <> Q:249 var
+R10627:10628 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R10610:10610 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10615:10616 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10626:10626 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10612:10613 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R10611:10611 DisQ.DisQSem <> a:243 var
+R10614:10614 DisQ.DisQSem <> l:244 var
+R10617:10620 DisQ.DisQDef <> Cval constr
+R10622:10622 DisQ.DisQSem <> m:245 var
+R10624:10625 DisQ.DisQSem <> ba:248 var
+R10629:10629 DisQ.DisQSem <> s:242 var
+R10597:10597 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10601:10602 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10607:10607 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10603:10606 Coq.Init.Datatypes <> None constr
+R10579:10580 DisQ.DisQSyntax <> AP constr
+R10583:10587 DisQ.DisQSyntax <> CAppU constr
+R10589:10589 DisQ.DisQSem <> a:243 var
+R10591:10591 DisQ.DisQSem <> e:247 var
+R10594:10594 DisQ.DisQSem <> Q:249 var
+R10573:10574 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R10557:10557 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10562:10563 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10572:10572 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10559:10560 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R10558:10558 DisQ.DisQSem <> a:243 var
+R10561:10561 DisQ.DisQSem <> l:244 var
+R10564:10567 DisQ.DisQDef <> Cval constr
+R10569:10569 DisQ.DisQSem <> m:245 var
+R10571:10571 DisQ.DisQSem <> b:246 var
+R10575:10575 DisQ.DisQSem <> s:242 var
+R10551:10554 DisQ.DisQSem <> aenv:241 var
+binder 10659:10662 <> aenv:250
+binder 10664:10664 <> s:251
+binder 10666:10666 <> l:252
+binder 10668:10668 <> x:253
+binder 10670:10670 <> a:254
+binder 10672:10672 <> n:255
+binder 10674:10674 <> v:256
+binder 10676:10676 <> r:257
+binder 10678:10679 <> va:258
+binder 10681:10683 <> va':259
+binder 10685:10686 <> lc:260
+binder 10688:10688 <> Q:261
+binder 10690:10690 <> k:262
+R10721:10724 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10693:10703 DisQ.DisQDef AEnv MapsTo def
+R10717:10720 DisQ.DisQSem <> aenv:250 var
+R10708:10709 DisQ.DisQSyntax <> QT constr
+R10711:10712 DisQ.DisQSem <> lc:260 var
+R10714:10714 DisQ.DisQSem <> n:255 var
+R10705:10705 DisQ.DisQSem <> a:254 var
+R10745:10799 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10726:10733 DisQ.DisQDef <> pick_mea ind
+R10735:10735 DisQ.DisQSem <> n:255 var
+R10737:10738 DisQ.DisQSem <> va:258 var
+R10740:10740 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10742:10742 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10744:10744 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10741:10741 DisQ.DisQSem <> r:257 var
+R10743:10743 DisQ.DisQSem <> v:256 var
+R10825:10828 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10801:10803 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10800:10800 DisQ.DisQSem <> k:262 var
+R10804:10804 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R10824:10824 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R10805:10805 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10807:10808 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10815:10816 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10823:10823 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10806:10806 DisQ.DisQSem <> a:254 var
+R10809:10812 DisQ.DisQSyntax <> BNum constr
+R10817:10820 DisQ.DisQSyntax <> BNum constr
+R10822:10822 DisQ.DisQSem <> n:255 var
+R10861:10915 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10850:10852 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10829:10842 DisQ.DisQDef <> build_state_ch def
+R10844:10844 DisQ.DisQSem <> n:255 var
+R10846:10846 DisQ.DisQSem <> v:256 var
+R10848:10849 DisQ.DisQSem <> va:258 var
+R10853:10856 Coq.Init.Datatypes <> Some constr
+R10858:10860 DisQ.DisQSem <> va':259 var
+R10916:10921 DisQ.DisQSem <> p_step:227 ind
+R11007:11016 DisQ.DisQDef <> subst_pexp def
+R11018:11018 DisQ.DisQSem <> Q:261 var
+R11020:11020 DisQ.DisQSem <> x:253 var
+R11022:11022 DisQ.DisQSem <> v:256 var
+R11001:11002 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R10993:10993 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10995:10996 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11000:11000 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10994:10994 DisQ.DisQSem <> l:252 var
+R10997:10999 DisQ.DisQSem <> va':259 var
+R11003:11003 DisQ.DisQSem <> s:251 var
+R10980:10980 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10982:10983 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10990:10990 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10981:10981 DisQ.DisQSem <> r:257 var
+R10984:10987 Coq.Init.Datatypes <> Some constr
+R10989:10989 DisQ.DisQSem <> v:256 var
+R10962:10963 DisQ.DisQSyntax <> AP constr
+R10966:10970 DisQ.DisQSyntax <> CMeas constr
+R10972:10972 DisQ.DisQSem <> x:253 var
+R10974:10974 DisQ.DisQSem <> k:262 var
+R10977:10977 DisQ.DisQSem <> Q:261 var
+R10956:10957 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R10929:10929 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10951:10952 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10955:10955 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10948:10949 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R10930:10930 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10932:10932 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10939:10940 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10947:10947 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10931:10931 DisQ.DisQSem <> a:254 var
+R10933:10936 DisQ.DisQSyntax <> BNum constr
+R10941:10944 DisQ.DisQSyntax <> BNum constr
+R10946:10946 DisQ.DisQSem <> n:255 var
+R10950:10950 DisQ.DisQSem <> l:252 var
+R10953:10954 DisQ.DisQSem <> va:258 var
+R10958:10958 DisQ.DisQSem <> s:251 var
+R10923:10926 DisQ.DisQSem <> aenv:250 var
+binder 11047:11050 <> aenv:263
+binder 11052:11052 <> s:264
+binder 11054:11054 <> x:265
+binder 11056:11056 <> n:266
+binder 11058:11058 <> Q:267
+R11061:11066 DisQ.DisQSem <> p_step:227 ind
+R11167:11167 DisQ.DisQSem <> Q:267 var
+R11162:11163 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R11106:11106 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11128:11129 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11161:11161 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11107:11107 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R11127:11127 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R11108:11108 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11110:11111 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11118:11119 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11126:11126 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11109:11109 DisQ.DisQSem <> x:265 var
+R11112:11115 DisQ.DisQSyntax <> BNum constr
+R11120:11123 DisQ.DisQSyntax <> BNum constr
+R11125:11125 DisQ.DisQSem <> n:266 var
+R11130:11133 DisQ.DisQDef <> Cval constr
+R11147:11147 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11150:11150 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11159:11159 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11148:11149 QuantumLib.Complex <> C0 abbrev
+R11151:11158 DisQ.MathSpec <> allfalse def
+R11164:11164 DisQ.DisQSem <> s:264 var
+R11093:11093 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11097:11098 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11103:11103 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11099:11102 Coq.Init.Datatypes <> None constr
+R11076:11077 DisQ.DisQSyntax <> AP constr
+R11080:11083 DisQ.DisQSyntax <> CNew constr
+R11085:11085 DisQ.DisQSem <> x:265 var
+R11087:11087 DisQ.DisQSem <> n:266 var
+R11090:11090 DisQ.DisQSem <> Q:267 var
+R11073:11073 DisQ.DisQSem <> s:264 var
+R11068:11071 DisQ.DisQSem <> aenv:263 var
+def 11180:11184 <> are_0
+R11189:11192 Coq.Init.Datatypes <> list ind
+R11194:11200 DisQ.DisQSyntax <> process ind
+binder 11187:11187 <> l:268
+R11215:11215 DisQ.DisQSem <> l:268 var
+R11222:11223 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R11228:11231 Coq.Init.Logic <> True ind
+R11254:11255 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R11250:11253 DisQ.DisQSyntax <> PNil constr
+R11263:11267 DisQ.DisQSem <> are_0:269 def
+R11289:11290 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R11296:11300 Coq.Init.Logic <> False ind
+def 11320:11325 <> same_l
+R11330:11335 DisQ.DisQSyntax <> glocus def
+binder 11328:11328 <> l:271
+R11342:11344 DisQ.BasicUtility <> var def
+binder 11339:11340 <> lv:272
+R11358:11358 DisQ.DisQSem <> l:271 var
+R11365:11366 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R11371:11374 Coq.Init.Logic <> True ind
+R11402:11403 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R11391:11391 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11399:11399 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11401:11401 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11392:11392 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11394:11394 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11396:11396 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11398:11398 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11414:11417 Coq.Arith.PeanoNat <> ::nat_scope:x_'=?'_x not
+R11418:11419 DisQ.DisQSem <> lv:272 var
+R11444:11448 Coq.Init.Logic <> False ind
+R11426:11431 DisQ.DisQSem <> same_l:273 def
+R11436:11437 DisQ.DisQSem <> lv:272 var
+def 11467:11471 <> cut_l
+R11476:11481 DisQ.DisQSyntax <> glocus def
+binder 11474:11474 <> l:275
+R11495:11495 DisQ.DisQSem <> l:275 var
+R11502:11503 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R11508:11509 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R11525:11526 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R11514:11514 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11522:11522 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11524:11524 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11515:11515 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11517:11517 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11519:11519 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11521:11521 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11541:11543 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R11552:11552 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R11534:11534 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11536:11536 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11538:11538 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11540:11540 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11544:11548 DisQ.DisQSem <> cut_l:276 def
+def 11571:11579 <> inv_sqrt2
+R11583:11583 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R11588:11589 Coq.Reals.Rdefinitions <> ::R_scope:'/'_x not
+R11590:11593 Coq.Reals.R_sqrt <> sqrt def
+def 11609:11618 <> cinv_sqrt2
+R11621:11621 QuantumLib.Complex <> C def
+R11626:11634 DisQ.DisQSem <> inv_sqrt2 def
+ind 11684:11689 <> m_step
+constr 11798:11805 <> end_step
+constr 11901:11908 <> mem_step
+constr 12033:12040 <> rev_step
+constr 12152:12160 <> commc_sem
+constr 12421:12429 <> move_step
+constr 12841:12852 <> newchan_step
+constr 13276:13287 <> mem_step_ctx
+constr 13586:13598 <> step_ctx_cons
+R11697:11699 Coq.Init.Datatypes <> nat ind
+binder 11692:11695 <> rmax:278
+R11710:11713 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11706:11709 DisQ.DisQDef <> aenv def
+R11721:11724 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11714:11720 DisQ.DisQDef <> gqstate def
+R11731:11734 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11725:11730 DisQ.DisQSyntax <> config def
+R11749:11752 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11736:11738 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R11735:11735 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R11739:11744 Coq.Init.Datatypes <> option ind
+R11746:11748 Coq.Init.Datatypes <> nat ind
+R11761:11764 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11753:11756 Coq.Init.Datatypes <> list ind
+R11758:11760 DisQ.BasicUtility <> var def
+R11772:11775 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11765:11771 DisQ.DisQDef <> gqstate def
+R11782:11785 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11776:11781 DisQ.DisQSyntax <> config def
+binder 11816:11819 <> aenv:281
+binder 11821:11821 <> s:282
+binder 11823:11823 <> l:283
+binder 11825:11825 <> Q:284
+R11835:11838 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11828:11832 DisQ.DisQSem <> are_0 def
+R11834:11834 DisQ.DisQSem <> Q:284 var
+R11839:11844 DisQ.DisQSem <> m_step:279 ind
+R11885:11885 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R11894:11894 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R11886:11889 DisQ.DisQSyntax <> Memb constr
+R11891:11891 DisQ.DisQSem <> l:283 var
+R11893:11893 DisQ.DisQSem <> Q:284 var
+R11882:11882 DisQ.DisQSem <> s:282 var
+R11878:11878 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R11880:11880 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R11879:11879 DisQ.DisQSem <> l:283 var
+R11866:11866 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11870:11871 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11876:11876 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11872:11875 Coq.Init.Datatypes <> None constr
+R11854:11854 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R11863:11863 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R11855:11858 DisQ.DisQSyntax <> Memb constr
+R11860:11860 DisQ.DisQSem <> l:283 var
+R11862:11862 DisQ.DisQSem <> Q:284 var
+R11851:11851 DisQ.DisQSem <> s:282 var
+R11846:11849 DisQ.DisQSem <> aenv:281 var
+binder 11919:11922 <> aenv:285
+binder 11924:11924 <> s:286
+binder 11926:11926 <> l:287
+binder 11928:11928 <> P:288
+binder 11930:11930 <> Q:289
+R11933:11938 DisQ.DisQSem <> m_step:279 ind
+R12011:12011 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R12026:12026 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R12012:12019 DisQ.DisQSyntax <> LockMemb constr
+R12021:12021 DisQ.DisQSem <> l:287 var
+R12023:12023 DisQ.DisQSem <> P:288 var
+R12025:12025 DisQ.DisQSem <> Q:289 var
+R12008:12008 DisQ.DisQSem <> s:286 var
+R12004:12004 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R12006:12006 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R12005:12005 DisQ.DisQSem <> l:287 var
+R11965:11965 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11996:11997 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R12002:12002 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11966:11969 Coq.Reals.Rdefinitions <> Rdiv def
+R11976:11978 Coq.Reals.Raxioms <> INR def
+R11981:11986 Coq.Init.Datatypes <> length def
+R11990:11991 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R11989:11989 DisQ.DisQSem <> P:288 var
+R11992:11992 DisQ.DisQSem <> Q:289 var
+R11998:12001 Coq.Init.Datatypes <> None constr
+R11948:11948 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R11962:11962 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R11949:11952 DisQ.DisQSyntax <> Memb constr
+R11954:11954 DisQ.DisQSem <> l:287 var
+R11958:11959 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R11957:11957 DisQ.DisQSem <> P:288 var
+R11960:11960 DisQ.DisQSem <> Q:289 var
+R11945:11945 DisQ.DisQSem <> s:286 var
+R11940:11943 DisQ.DisQSem <> aenv:285 var
+binder 12051:12054 <> aenv:290
+binder 12056:12056 <> s:291
+binder 12058:12058 <> m:292
+binder 12060:12060 <> l:293
+binder 12062:12062 <> P:294
+binder 12064:12065 <> lp:295
+R12091:12094 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12069:12072 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12090:12090 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12068:12068 DisQ.DisQSem <> m:292 var
+R12073:12073 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R12089:12089 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R12074:12081 DisQ.DisQSyntax <> LockMemb constr
+R12083:12083 DisQ.DisQSem <> l:293 var
+R12085:12085 DisQ.DisQSem <> P:294 var
+R12087:12088 DisQ.DisQSem <> lp:295 var
+R12095:12100 DisQ.DisQSem <> m_step:279 ind
+R12130:12130 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R12145:12145 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R12131:12134 DisQ.DisQSyntax <> Memb constr
+R12136:12136 DisQ.DisQSem <> l:293 var
+R12140:12141 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R12139:12139 DisQ.DisQSem <> P:294 var
+R12142:12143 DisQ.DisQSem <> lp:295 var
+R12127:12127 DisQ.DisQSem <> s:291 var
+R12123:12123 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R12125:12125 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R12124:12124 DisQ.DisQSem <> l:293 var
+R12111:12111 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R12115:12116 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R12121:12121 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R12117:12120 Coq.Init.Datatypes <> None constr
+R12109:12109 DisQ.DisQSem <> m:292 var
+R12107:12107 DisQ.DisQSem <> s:291 var
+R12102:12105 DisQ.DisQSem <> aenv:290 var
+binder 12171:12174 <> aenv:296
+binder 12176:12176 <> s:297
+binder 12178:12178 <> x:298
+binder 12180:12180 <> y:299
+binder 12182:12183 <> l1:300
+binder 12185:12186 <> l2:301
+binder 12188:12188 <> n:302
+binder 12190:12191 <> m1:303
+binder 12193:12194 <> m2:304
+binder 12196:12197 <> cf:305
+binder 12199:12199 <> a:306
+binder 12201:12201 <> P:307
+binder 12203:12203 <> Q:308
+R12226:12243 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12217:12219 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12206:12214 DisQ.DisQKind <> simp_aexp def
+R12216:12216 DisQ.DisQSem <> a:306 var
+R12220:12223 Coq.Init.Datatypes <> Some constr
+R12225:12225 DisQ.DisQSem <> n:302 var
+R12244:12249 DisQ.DisQSem <> m_step:279 ind
+R12375:12375 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R12391:12393 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R12376:12379 DisQ.DisQSyntax <> Memb constr
+R12381:12382 DisQ.DisQSem <> l1:300 var
+R12386:12387 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R12385:12385 DisQ.DisQSem <> P:307 var
+R12388:12389 DisQ.DisQSem <> m1:303 var
+R12394:12394 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R12410:12412 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R12395:12398 DisQ.DisQSyntax <> Memb constr
+R12400:12401 DisQ.DisQSem <> l2:301 var
+R12405:12406 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R12404:12404 DisQ.DisQSem <> Q:308 var
+R12407:12408 DisQ.DisQSem <> m2:304 var
+R12413:12414 DisQ.DisQSem <> cf:305 var
+R12372:12372 DisQ.DisQSem <> s:297 var
+R12364:12365 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R12362:12363 DisQ.DisQSem <> l1:300 var
+R12366:12366 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R12369:12369 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R12367:12368 DisQ.DisQSem <> l2:301 var
+R12349:12349 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R12353:12354 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R12359:12359 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R12355:12358 Coq.Init.Datatypes <> None constr
+R12259:12259 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R12292:12294 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R12260:12267 DisQ.DisQSyntax <> LockMemb constr
+R12269:12270 DisQ.DisQSem <> l1:300 var
+R12273:12274 DisQ.DisQSyntax <> DP constr
+R12277:12280 DisQ.DisQSyntax <> Send constr
+R12282:12282 DisQ.DisQSem <> x:298 var
+R12284:12284 DisQ.DisQSem <> a:306 var
+R12287:12287 DisQ.DisQSem <> P:307 var
+R12290:12291 DisQ.DisQSem <> m1:303 var
+R12295:12295 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R12328:12330 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R12296:12303 DisQ.DisQSyntax <> LockMemb constr
+R12305:12306 DisQ.DisQSem <> l2:301 var
+R12309:12310 DisQ.DisQSyntax <> DP constr
+R12313:12316 DisQ.DisQSyntax <> Recv constr
+R12318:12318 DisQ.DisQSem <> x:298 var
+R12320:12320 DisQ.DisQSem <> y:299 var
+R12323:12323 DisQ.DisQSem <> Q:308 var
+R12326:12327 DisQ.DisQSem <> m2:304 var
+R12331:12332 DisQ.DisQSem <> cf:305 var
+R12256:12256 DisQ.DisQSem <> s:297 var
+R12251:12254 DisQ.DisQSem <> aenv:296 var
+binder 12440:12443 <> aenv:309
+binder 12445:12445 <> s:310
+binder 12447:12447 <> a:311
+binder 12449:12449 <> l:312
+binder 12451:12452 <> lp:313
+binder 12454:12454 <> P:314
+binder 12456:12457 <> P':315
+binder 12459:12459 <> r:316
+binder 12461:12461 <> n:317
+binder 12463:12464 <> n':318
+binder 12466:12466 <> m:319
+binder 12468:12468 <> v:320
+binder 12470:12471 <> va:321
+binder 12473:12474 <> lv:322
+binder 12476:12477 <> lc:323
+binder 12479:12480 <> fc:324
+binder 12482:12484 <> fca:325
+R12504:12523 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12488:12490 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12487:12487 DisQ.DisQSem <> n:317 var
+R12491:12491 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R12501:12502 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R12492:12497 Coq.Init.Datatypes <> length def
+R12499:12500 DisQ.DisQSem <> lp:313 var
+R12544:12547 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12534:12536 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12524:12531 DisQ.DisQDef <> gses_len def
+R12533:12533 DisQ.DisQSem <> a:311 var
+R12537:12540 Coq.Init.Datatypes <> Some constr
+R12542:12543 DisQ.DisQSem <> n':318 var
+R12567:12570 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12558:12560 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12548:12555 DisQ.DisQDef <> gses_len def
+R12557:12557 DisQ.DisQSem <> l:312 var
+R12561:12564 Coq.Init.Datatypes <> Some constr
+R12566:12566 DisQ.DisQSem <> m:319 var
+R12582:12585 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12571:12576 DisQ.DisQSem <> same_l def
+R12578:12578 DisQ.DisQSem <> a:311 var
+R12580:12581 DisQ.DisQSem <> lc:323 var
+R12607:12625 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12586:12594 DisQ.DisQDef <> mut_state ind
+R12598:12599 DisQ.DisQSem <> n':318 var
+R12601:12601 DisQ.DisQSem <> m:319 var
+R12603:12603 DisQ.DisQSem <> v:320 var
+R12605:12606 DisQ.DisQSem <> fc:324 var
+R12685:12688 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12627:12632 DisQ.DisQSem <> p_step ind
+R12634:12637 DisQ.DisQSem <> rmax:278 var
+R12639:12642 DisQ.DisQSem <> aenv:309 var
+R12644:12644 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R12657:12657 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R12645:12645 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R12653:12653 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R12656:12656 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R12646:12650 DisQ.DisQSem <> cut_l def
+R12652:12652 DisQ.DisQSem <> a:311 var
+R12654:12655 DisQ.DisQSem <> fc:324 var
+R12659:12659 DisQ.DisQSem <> P:314 var
+R12661:12661 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R12663:12663 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R12666:12666 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R12662:12662 DisQ.DisQSem <> r:316 var
+R12664:12665 DisQ.DisQSem <> lv:322 var
+R12668:12668 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R12681:12681 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R12669:12669 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R12677:12677 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R12680:12680 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R12670:12674 DisQ.DisQSem <> cut_l def
+R12676:12676 DisQ.DisQSem <> a:311 var
+R12678:12679 DisQ.DisQSem <> va:321 var
+R12683:12684 DisQ.DisQSem <> P':315 var
+R12712:12727 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12689:12697 DisQ.DisQDef <> mut_state ind
+R12701:12701 DisQ.DisQSem <> m:319 var
+R12703:12704 DisQ.DisQSem <> n':318 var
+R12706:12707 DisQ.DisQSem <> va:321 var
+R12709:12711 DisQ.DisQSem <> fca:325 var
+R12728:12733 DisQ.DisQSem <> m_step:279 ind
+R12817:12817 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R12834:12834 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R12818:12821 DisQ.DisQSyntax <> Memb constr
+R12823:12824 DisQ.DisQSem <> lc:323 var
+R12829:12830 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R12827:12828 DisQ.DisQSem <> P':315 var
+R12831:12832 DisQ.DisQSem <> lp:313 var
+R12811:12812 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R12801:12801 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R12806:12807 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R12810:12810 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R12803:12804 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R12802:12802 DisQ.DisQSem <> a:311 var
+R12805:12805 DisQ.DisQSem <> l:312 var
+R12808:12809 DisQ.DisQSem <> fc:324 var
+R12813:12813 DisQ.DisQSem <> s:310 var
+R12795:12795 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R12798:12798 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R12796:12797 DisQ.DisQSem <> lc:323 var
+R12775:12775 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R12789:12790 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R12793:12793 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R12778:12780 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R12777:12777 DisQ.DisQSem <> r:316 var
+R12781:12783 Coq.Reals.Raxioms <> INR def
+R12785:12785 DisQ.DisQSem <> n:317 var
+R12791:12792 DisQ.DisQSem <> lv:322 var
+R12756:12756 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R12772:12772 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R12757:12760 DisQ.DisQSyntax <> Memb constr
+R12762:12763 DisQ.DisQSem <> lc:323 var
+R12767:12768 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R12766:12766 DisQ.DisQSem <> P:314 var
+R12769:12770 DisQ.DisQSem <> lp:313 var
+R12750:12751 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R12741:12741 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R12746:12747 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R12749:12749 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R12743:12744 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R12742:12742 DisQ.DisQSem <> a:311 var
+R12745:12745 DisQ.DisQSem <> l:312 var
+R12748:12748 DisQ.DisQSem <> v:320 var
+R12752:12752 DisQ.DisQSem <> s:310 var
+R12735:12738 DisQ.DisQSem <> aenv:309 var
+binder 12863:12866 <> aenv:326
+binder 12868:12870 <> lc1:327
+binder 12872:12874 <> lc2:328
+binder 12876:12876 <> c:329
+binder 12878:12878 <> n:330
+binder 12880:12881 <> m1:331
+binder 12883:12884 <> m2:332
+binder 12886:12886 <> P:333
+binder 12888:12888 <> Q:334
+binder 12890:12891 <> cf:335
+binder 12893:12893 <> s:336
+R12915:12920 DisQ.DisQSem <> m_step:279 ind
+R13228:13228 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R13245:13247 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R13229:13232 DisQ.DisQSyntax <> Memb constr
+R13234:13236 DisQ.DisQSem <> lc1:327 var
+R13240:13241 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R13239:13239 DisQ.DisQSem <> P:333 var
+R13242:13243 DisQ.DisQSem <> m1:331 var
+R13248:13248 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R13265:13267 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R13249:13252 DisQ.DisQSyntax <> Memb constr
+R13254:13256 DisQ.DisQSem <> lc2:328 var
+R13260:13261 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R13259:13259 DisQ.DisQSem <> Q:334 var
+R13262:13263 DisQ.DisQSem <> m2:332 var
+R13268:13269 DisQ.DisQSem <> cf:335 var
+R13222:13223 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R13056:13057 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13111:13136 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13221:13221 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13084:13085 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R13058:13058 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R13083:13083 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R13059:13059 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13078:13078 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13082:13082 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13060:13060 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13062:13062 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13069:13070 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13077:13077 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13061:13061 DisQ.DisQSem <> c:329 var
+R13063:13066 DisQ.DisQSyntax <> BNum constr
+R13071:13074 DisQ.DisQSyntax <> BNum constr
+R13076:13076 DisQ.DisQSem <> n:330 var
+R13079:13081 DisQ.DisQSem <> lc1:327 var
+R13086:13086 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R13110:13110 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R13087:13087 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13105:13105 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13109:13109 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13088:13088 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13090:13090 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13097:13097 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13104:13104 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13089:13089 DisQ.DisQSem <> c:329 var
+R13091:13094 DisQ.DisQSyntax <> BNum constr
+R13098:13101 DisQ.DisQSyntax <> BNum constr
+R13103:13103 DisQ.DisQSem <> n:330 var
+R13106:13108 DisQ.DisQSem <> lc2:328 var
+R13137:13140 DisQ.DisQDef <> Cval constr
+R13144:13144 Coq.Arith.PeanoNat <> ::nat_scope:x_'^'_x not
+R13145:13145 DisQ.DisQSem <> n:330 var
+binder 13153:13153 <> i:337
+R13162:13165 Coq.Arith.PeanoNat <> ::nat_scope:x_'=?'_x not
+R13161:13161 DisQ.DisQSem <> i:337 var
+R13200:13200 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13211:13211 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13219:13219 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13201:13210 DisQ.DisQSem <> cinv_sqrt2 def
+R13212:13218 DisQ.DisQSem <> alltrue def
+R13173:13173 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13184:13184 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13193:13193 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13174:13183 DisQ.DisQSem <> cinv_sqrt2 def
+R13185:13192 DisQ.MathSpec <> allfalse def
+R13224:13224 DisQ.DisQSem <> s:336 var
+R13026:13027 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R13023:13025 DisQ.DisQSem <> lc1:327 var
+R13028:13028 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R13032:13032 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R13029:13031 DisQ.DisQSem <> lc2:328 var
+R13010:13010 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13014:13015 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13020:13020 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13016:13019 Coq.Init.Datatypes <> None constr
+R12930:12930 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R12965:12967 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R12931:12938 DisQ.DisQSyntax <> LockMemb constr
+R12940:12942 DisQ.DisQSem <> lc1:327 var
+R12945:12946 DisQ.DisQSyntax <> DP constr
+R12949:12953 DisQ.DisQSyntax <> NewCh constr
+R12955:12955 DisQ.DisQSem <> c:329 var
+R12957:12957 DisQ.DisQSem <> n:330 var
+R12960:12960 DisQ.DisQSem <> P:333 var
+R12963:12964 DisQ.DisQSem <> m1:331 var
+R12968:12968 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R13003:13005 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R12969:12976 DisQ.DisQSyntax <> LockMemb constr
+R12978:12980 DisQ.DisQSem <> lc2:328 var
+R12983:12984 DisQ.DisQSyntax <> DP constr
+R12987:12991 DisQ.DisQSyntax <> NewCh constr
+R12993:12993 DisQ.DisQSem <> c:329 var
+R12995:12995 DisQ.DisQSem <> n:330 var
+R12998:12998 DisQ.DisQSem <> Q:334 var
+R13001:13002 DisQ.DisQSem <> m2:332 var
+R13006:13007 DisQ.DisQSem <> cf:335 var
+R12927:12927 DisQ.DisQSem <> s:336 var
+R12922:12925 DisQ.DisQSem <> aenv:326 var
+binder 13299:13302 <> aenv:338
+binder 13304:13304 <> s:339
+binder 13306:13306 <> l:340
+binder 13308:13308 <> P:341
+binder 13310:13310 <> Q:342
+binder 13312:13313 <> cf:343
+R13441:13450 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13324:13329 DisQ.DisQSem <> m_step:279 ind
+R13425:13425 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R13440:13440 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R13426:13433 DisQ.DisQSyntax <> LockMemb constr
+R13435:13435 DisQ.DisQSem <> l:340 var
+R13437:13437 DisQ.DisQSem <> P:341 var
+R13439:13439 DisQ.DisQSem <> Q:342 var
+R13423:13423 DisQ.DisQSem <> s:339 var
+R13406:13406 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R13408:13408 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R13407:13407 DisQ.DisQSem <> l:340 var
+R13367:13367 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13398:13399 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13404:13404 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13368:13371 Coq.Reals.Rdefinitions <> Rdiv def
+R13378:13380 Coq.Reals.Raxioms <> INR def
+R13383:13388 Coq.Init.Datatypes <> length def
+R13392:13393 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R13391:13391 DisQ.DisQSem <> P:341 var
+R13394:13394 DisQ.DisQSem <> Q:342 var
+R13400:13403 Coq.Init.Datatypes <> None constr
+R13338:13338 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R13352:13352 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R13339:13342 DisQ.DisQSyntax <> Memb constr
+R13344:13344 DisQ.DisQSem <> l:340 var
+R13348:13349 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R13347:13347 DisQ.DisQSem <> P:341 var
+R13350:13350 DisQ.DisQSem <> Q:342 var
+R13336:13336 DisQ.DisQSem <> s:339 var
+R13331:13334 DisQ.DisQSem <> aenv:338 var
+R13451:13456 DisQ.DisQSem <> m_step:279 ind
+R13574:13577 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R13560:13567 DisQ.DisQSyntax <> LockMemb constr
+R13569:13569 DisQ.DisQSem <> l:340 var
+R13571:13571 DisQ.DisQSem <> P:341 var
+R13573:13573 DisQ.DisQSem <> Q:342 var
+R13578:13579 DisQ.DisQSem <> cf:343 var
+R13557:13557 DisQ.DisQSem <> s:339 var
+R13540:13540 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R13542:13542 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R13541:13541 DisQ.DisQSem <> l:340 var
+R13501:13501 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13532:13533 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13538:13538 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13502:13505 Coq.Reals.Rdefinitions <> Rdiv def
+R13512:13514 Coq.Reals.Raxioms <> INR def
+R13517:13522 Coq.Init.Datatypes <> length def
+R13526:13527 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R13525:13525 DisQ.DisQSem <> P:341 var
+R13528:13528 DisQ.DisQSem <> Q:342 var
+R13534:13537 Coq.Init.Datatypes <> None constr
+R13480:13483 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R13467:13470 DisQ.DisQSyntax <> Memb constr
+R13472:13472 DisQ.DisQSem <> l:340 var
+R13476:13477 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R13475:13475 DisQ.DisQSem <> P:341 var
+R13478:13478 DisQ.DisQSem <> Q:342 var
+R13484:13485 DisQ.DisQSem <> cf:343 var
+R13464:13464 DisQ.DisQSem <> s:339 var
+R13459:13462 DisQ.DisQSem <> aenv:338 var
+binder 13613:13616 <> aenv:344
+binder 13618:13618 <> s:345
+binder 13620:13620 <> m:346
+binder 13622:13622 <> c:347
+binder 13624:13624 <> r:348
+binder 13626:13627 <> lv:349
+binder 13629:13630 <> ls:350
+binder 13632:13633 <> s':351
+binder 13635:13636 <> c':352
+R13677:13686 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13645:13650 DisQ.DisQSem <> m_step:279 ind
+R13675:13676 DisQ.DisQSem <> c':352 var
+R13672:13673 DisQ.DisQSem <> s':351 var
+R13669:13670 DisQ.DisQSem <> ls:350 var
+R13662:13662 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13664:13664 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13667:13667 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13663:13663 DisQ.DisQSem <> r:348 var
+R13665:13666 DisQ.DisQSem <> lv:349 var
+R13660:13660 DisQ.DisQSem <> c:347 var
+R13658:13658 DisQ.DisQSem <> s:345 var
+R13653:13656 DisQ.DisQSem <> aenv:344 var
+R13687:13692 DisQ.DisQSem <> m_step:279 ind
+R13726:13729 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R13725:13725 DisQ.DisQSem <> m:346 var
+R13730:13731 DisQ.DisQSem <> c':352 var
+R13721:13722 DisQ.DisQSem <> s':351 var
+R13718:13719 DisQ.DisQSem <> ls:350 var
+R13711:13711 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13713:13713 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13716:13716 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13712:13712 DisQ.DisQSem <> r:348 var
+R13714:13715 DisQ.DisQSem <> lv:349 var
+R13704:13707 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R13703:13703 DisQ.DisQSem <> m:346 var
+R13708:13708 DisQ.DisQSem <> c:347 var
+R13700:13700 DisQ.DisQSem <> s:345 var
+R13695:13698 DisQ.DisQSem <> aenv:344 var

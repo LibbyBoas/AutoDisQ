@@ -16,8 +16,8 @@ Definition op2 : myOp := OpAP (CMeas 0 ([] : locus)).
 Definition R1  : op_list := [op1; op2].
 
 Definition P1 : distributed_prog :=
+  
   auto_disq_alg1_paper 2 2 R1 cfg1.
-
 Compute P1.
 
 Compute fit P1.
