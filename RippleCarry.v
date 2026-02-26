@@ -33,12 +33,16 @@ Definition t : var := 1.
 Definition y : var := 2.
 Definition x : var := 3.
 
-Definition new v i : cexp := CNew v i.
 
 
 Definition ops : op_list := [
   OpAP (CNew t n);
+  OpAP (CNew y n);
+  OpAP (CNew x 2);
 
+  OpAP (MAJseq n t y x);
+  OpAP (CAppU CU t (Num n-1) (X x (Num 1)));
+  OpAP (UMAseq n t y x);
 
 ].
 
@@ -47,9 +51,3 @@ Definition dist : distributed_prog :=
 Compute dist.
 
 
-  OpAP (CNew y n);
-  OpAP (CNew x 2);
-
-  OpAP (MAJseq n t y x);
-  OpAP (CAppU CU t (Num n-1) (X x (Num 1)));
-  OpAP (UMAseq n t y x);
